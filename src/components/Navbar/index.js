@@ -12,13 +12,6 @@ const navbarItem = [
 ];
 function Navbar() {
   return (
-    // <Col>
-    //   {navbarItem.map((item, index) => (
-    //     <Row key={index}>
-    //       <Link to="/">{item.content}</Link>
-    //     </Row>
-    //   ))}
-    // </Col>
     <Nav className="justify-content-between" activeKey="/home">
       {navbarItem.map((item, index) => (
         <Nav.Item key={index}>

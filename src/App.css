@@ -188,10 +188,15 @@ seemore:focus {
   opacity: 1;
 }
 .eth-card {
-  max-width: 439px;
-  max-height: 441px;
+  /* max-width: 439px;
+  max-height: 441px; */
+  margin-top: 30px;
   border-radius: 15px;
   background: #23262f 0% 0% no-repeat padding-box;
+}
+.eth-net {
+  margin-top: 17px;
+  margin-bottom: 33px;
 }
 .eth-text {
   font: normal normal normal 24px/29px Montserrat;
@@ -218,6 +223,98 @@ seemore:focus {
 }
 .eth-container {
   max-width: 80%;
+}
+.buyprice {
+  margin-top: 35px;
+  font: normal normal normal 12px/15px Montserrat;
+  color: #dddddd;
+}
+.buy-eth {
+  font: normal normal 900 32px/39px Montserrat;
+  color: #ffffff;
+}
+.arrow {
+  width: 40px;
+  height: 50px;
+  cursor: pointer;
+}
+.time {
+  font: normal normal normal 18px/22px Montserrat;
+  color: #dddddd;
+}
+.time span {
+  font: normal normal normal 12px/15px Montserrat;
+  color: #dddddd;
+}
+.undertime {
+  padding-left: 10px;
+}
+.favor {
+  font: normal normal normal 24px/29px Montserrat;
+  color: #dddddd;
+}
+.buybtn {
+  width: 355px;
+  height: 60px;
+  border-radius: 30px;
+  font-family: 24px;
+  color: white;
+}
+.bidbtn {
+  width: 350px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-family: 24px;
+  color: white;
+}
+.subtitle {
+  font: normal normal bold 40px/73px Montserrat;
+  color: #dddddd;
+}
+.subdescription {
+  font: normal normal normal 20px/29px Montserrat;
+  color: #dddddd;
+}
+.popular {
+  text-align: left;
+  font: normal normal 900 60px/110px Montserrat;
+  color: #767d8f;
+}
+.creator {
+  text-align: left;
+  font: normal normal normal 32px/52px Montserrat;
+  color: #ffffff;
+}
+.popular-body {
+  background: #23262f 0% 0% no-repeat padding-box;
+}
+.timeframe {
+  font: normal normal normal 15px/29px Montserrat;
+  color: #767d8f;
+}
+.creator-card {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  padding: 25px;
+  background: #141416 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  transition: height 0.5ms;
+}
+.creator-card:hover {
+  height: 270px;
+}
+.creator-card button {
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  padding: 0;
+}
+.font-icons {
+  font-size: 24px;
+  color: white;
+  margin: 0;
 }
 @keyframes App-logo-spin {
   from {
