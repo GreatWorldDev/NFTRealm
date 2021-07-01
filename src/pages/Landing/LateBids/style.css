@@ -1,0 +1,19 @@
+.left-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+  left: -30px;
+  color: white;
+}
+.right-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+  right: -30px;
+  color: white;
+}
+.content {
+  max-width: 250px;
+  font: normal normal normal 15px/22px Montserrat;
+  color: white;
+}

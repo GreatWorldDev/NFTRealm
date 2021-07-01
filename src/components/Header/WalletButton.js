@@ -15,7 +15,7 @@ export default function WalletButton(props) {
             alt="mdo"
             width="45"
             height="45"
-            class="rounded-circle mr-2"
+            className="rounded-circle mr-2"
           />
           <div style={{ lineHeight: "45px" }}>{walletData.token}</div>
         </div>

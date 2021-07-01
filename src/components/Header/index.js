@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
 import WalletButton from "./WalletButton";
 import Search from "./Search";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const walletData = { avatar: "assets/images/avatar.jpg",token:" 0xc4efw...b21a" };
+const walletData = {
+  avatar: "assets/images/avatar.jpg",
+  token: " 0xc4efw...b21a",
+};
 function Header() {
   const [isClicked, setisClicked] = useState(false);
   useEffect(() => {
     setisClicked(false);
-  },[]);
+  }, []);
   const handleClick = () => {
     setisClicked(!isClicked);
-  }
+  };
   return (
     <header className="p-3 my-35 mx-0">
       <div className="mx-3">
@@ -26,25 +29,29 @@ function Header() {
           <div className="nav col-12 col-lg-auto mb-5 mb-lg-0 me-lg-3 d-flex">
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-end mb-md-0 text-white">
               <li>
-                <Search/>
+                <Search />
               </li>
               <li>
-                <Link to="/" class="nav-link px-2 headerlist">
+                <Link to="/" className="nav-link px-2 headerlist">
                   Discover Market
                 </Link>
               </li>
               <li>
-                <Link to="/" class="nav-link px-2 headerlist">
+                <Link to="/" className="nav-link px-2 headerlist">
                   Find People
                 </Link>
               </li>
             </ul>
             <div className="dropdown text-end"></div>
-            <WalletButton walletData={walletData} isClicked={isClicked} onClick={handleClick}/>
+            <WalletButton
+              walletData={walletData}
+              isClicked={isClicked}
+              onClick={handleClick}
+            />
           </div>
         </div>
       </div>
-    </header>  
+    </header>
   );
 }
 

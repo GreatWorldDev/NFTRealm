@@ -9,6 +9,9 @@ import { Card } from "react-bootstrap";
 import SliderItem from "../SliderItem";
 import Slider from "react-touch-drag-slider";
 import Popular from "../Popular";
+import LateBids from "../LateBids";
+import DiscoverNFT from "../DiscoverNFT";
+import Footer from "../../../components/Footer";
 const slideItems = [
   { image: "assets/images/video-preview-1.png" },
   { image: "assets/images/video-preview-1.png" },
@@ -24,7 +27,7 @@ function Main() {
           artists & collectors
         </p>
         <h2 className="maintitle">The #1 community focused NFT Marketplace</h2>
-        <Button variant="outline-primary" className="explore-btn">
+        <Button variant="outline-primary" className="explore-btn my-5">
           Explore Marketplace
         </Button>
         <div className="d-flex justify-content-between">
@@ -49,6 +52,9 @@ function Main() {
         </p>
       </Container>
       <Popular />
+      <LateBids />
+      <DiscoverNFT />
+      <Footer />
     </>
   );
 }

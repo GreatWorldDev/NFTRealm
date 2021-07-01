@@ -3,26 +3,41 @@ import { Container } from "react-bootstrap";
 import { BiPlusCircle } from "react-icons/bi";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Button, Card } from "react-bootstrap";
-function UserCard() {
+import "./style.css";
+function UserCard(props) {
+  const { avatar, name, followNum, index } = props;
   return (
-    <Card className="creator-card">
-      <div className="d-flex justify-content-between align-items-center border-bottom">
-        <Button style={{ backgroundColor: "" }}>1</Button>
+    <Card className="creator-card" style={{ borderRadius: "20px" }}>
+      <div className="d-flex justify-content-between align-items-center border-bottom mb-2">
+        <button
+          style={{
+            backgroundColor: index == 0 ? "#45B26B" : "",
+            backgroundColor: index == 1 ? "#9757D7" : "",
+            backgroundColor: index == 2 ? "#3772FF" : "",
+          }}
+        >
+          #{index + 1}
+        </button>
         <div className="font-icons">
           <BiPlusCircle />
           <BsArrowUpRight />
         </div>
       </div>
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-between align-items-center font-text">
         <div className="text-white">
           <img src="assets/images/gemstone.png" />
-          Creator
+          &nbsp;Creator
         </div>
         <div className="text-white">
           <img src="assets/images/goal.png" />
-          LvL 15
+          &nbsp;LvL 15
         </div>
       </div>
+      <div className="d-flex justify-content-center">
+        <img src={avatar} alt="Avatar" className="avatar my-4" />
+      </div>
+      <h6>{name}</h6>
+      <p>{followNum} Followers</p>
     </Card>
   );
 }
