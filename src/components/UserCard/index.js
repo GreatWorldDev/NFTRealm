@@ -7,7 +7,7 @@ import "./style.css";
 function UserCard(props) {
   const { avatar, name, followNum, index } = props;
   return (
-    <Card className="creator-card" style={{ borderRadius: "20px" }}>
+    <Card className="creator-card">
       <div className="d-flex justify-content-between align-items-center border-bottom mb-2">
         <button
           style={{
@@ -34,7 +34,7 @@ function UserCard(props) {
         </div>
       </div>
       <div className="d-flex justify-content-center">
-        <img src={avatar} alt="Avatar" className="avatar my-4" />
+        <img src={avatar} alt="Avatar" className="avatar" />
       </div>
       <h6>{name}</h6>
       <p>{followNum} Followers</p>

@@ -1,11 +1,11 @@
 import { div } from "prelude-ls";
 import React, { useEffect, useState } from "react";
-function Landing() {
+function Profile() {
   return (
     <>
-      <div>Landing</div>
+      <div>Profile</div>
     </>
   );
 }
 
-export default Landing;
+export default Profile;

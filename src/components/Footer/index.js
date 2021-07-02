@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import BootstrapSwitchButton from "bootstrap-switch-button-react";
 import { BsArrowRight } from "react-icons/bs";
 import { FaTelegramPlane, FaTwitter, FaRedditAlien } from "react-icons/fa";
+import Switch from "react-switch";
 import "./style.css";
 function Footer() {
+  const [darkTheme, setTheme] = useState(true);
+  useEffect(() => {
+    setTheme(true);
+  }, []);
+  const handleChange = () => {
+    setTheme(!darkTheme);
+  };
   return (
     <footer className="d-flex justify-content-between border-top">
       <div className="col text-left">
@@ -12,12 +19,12 @@ function Footer() {
           <img src="assets/images/Group153.png" alt="logo" className="mb-3" />
         </Link>
         <p>We change the future of the NFT Marketplaces</p>
-        <div>
-          Dark Theme{" "}
-          <BootstrapSwitchButton
-            checked={true}
-            onstyle="primary"
-            className="switch"
+        <div className="d-flex align-items-center">
+          Dark Theme &nbsp;{" "}
+          <Switch
+            onChange={handleChange}
+            checked={darkTheme}
+            onColor="#3772FF"
           />
         </div>
       </div>
@@ -46,20 +53,23 @@ function Footer() {
           <p>Become a Partner</p>
         </Link>
       </div>
-      <div className="col text-left">
+      <div className="col text-center">
         <Link to="/">
-          <p>Join Newsletter & our community</p>
+          <p className="text-center">Join Newsletter & our community</p>
         </Link>
-        <div className="email d-flex align-items-center">
-          <input
-            type="text"
-            placeholer="Enter your Email"
-            className="email-input"
-          />
-          <button className="email-btn">
-            <BsArrowRight />
-          </button>
+        <div className=" d-flex justify-content-center">
+          <div className="email d-flex justify-content-center align-items-center">
+            <input
+              type="text"
+              placeholer="Enter your Email"
+              className="email-input"
+            />
+            <button className="email-btn">
+              <BsArrowRight />
+            </button>
+          </div>
         </div>
+
         <div className="d-flex justify-content-around media-links">
           <Link to="/">
             <FaTelegramPlane />

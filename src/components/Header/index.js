@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import WalletButton from "./WalletButton";
 import Search from "./Search";
 import { Link } from "react-router-dom";
-
+import Wallet from "../Wallet";
+import { OverlayTrigger, Popover } from "react-bootstrap";
+import "./style.css";
 const walletData = {
   avatar: "assets/images/avatar.jpg",
   token: " 0xc4efw...b21a",
@@ -16,7 +18,7 @@ function Header() {
     setisClicked(!isClicked);
   };
   return (
-    <header className="p-3 my-35 mx-0">
+    <header>
       <div className="mx-3">
         <div className="d-flex flex-wrap align-items-center justify-content-between">
           <Link
@@ -32,22 +34,29 @@ function Header() {
                 <Search />
               </li>
               <li>
-                <Link to="/" className="nav-link px-2 headerlist">
+                <Link to="/" className="nav-link px-3 headerlist">
                   Discover Market
                 </Link>
               </li>
               <li>
-                <Link to="/" className="nav-link px-2 headerlist">
+                <Link to="/" className="nav-link px-3 headerlist">
                   Find People
                 </Link>
               </li>
+              <li>
+                <OverlayTrigger
+                  trigger="click"
+                  placement="bottom"
+                  overlay={Wallet}
+                >
+                  <WalletButton
+                    walletData={walletData}
+                    isClicked={isClicked}
+                    onClick={handleClick}
+                  />
+                </OverlayTrigger>
+              </li>
             </ul>
-            <div className="dropdown text-end"></div>
-            <WalletButton
-              walletData={walletData}
-              isClicked={isClicked}
-              onClick={handleClick}
-            />
           </div>
         </div>
       </div>

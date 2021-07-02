@@ -47,7 +47,7 @@ const collapseData = [
 
 function DiscoverNFT() {
   return (
-    <Container>
+    <div className="sec-container">
       <p className="popular mt-5">DISCOVER NFTs</p>
       <Accordion>
         <Accordion.Toggle as={Card.Header} eventKey="0">
@@ -113,7 +113,7 @@ function DiscoverNFT() {
         <BsArrowRight className="right-arrow" />
       </div>
       <button className="explore">Explore NFT Marketplace</button>
-    </Container>
+    </div>
   );
 }
 

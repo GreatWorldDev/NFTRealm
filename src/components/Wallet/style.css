@@ -1,0 +1,40 @@
+.popover {
+  border-radius: 15px !important;
+  border: none !important;
+}
+.popover-body {
+  width: 240.5px;
+  height: 323.2px;
+  border-radius: 10px;
+  background-color: #23262f;
+}
+.bs-popover-auto[x-placement^="bottom"] > .arrow::after,
+.bs-popover-bottom > .arrow::after {
+  border-bottom-color: #23262f !important;
+}
+.wallet h3 {
+  font: normal normal bold 24px/29px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.wallet p {
+  color: white;
+}
+.bnb p {
+  text-align: left;
+  font: normal normal normal 12px/15px Montserrat;
+  letter-spacing: 0px;
+  color: #dddddd;
+  opacity: 1;
+}
+p {
+  text-align: left;
+}
+.bnb span {
+  font: normal normal 900 24px/29px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.bnb a {
+  border-bottom: 1px solid #3772ff !important;
+}

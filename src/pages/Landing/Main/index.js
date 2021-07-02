@@ -12,6 +12,7 @@ import Popular from "../Popular";
 import LateBids from "../LateBids";
 import DiscoverNFT from "../DiscoverNFT";
 import Footer from "../../../components/Footer";
+import "./style.css";
 const slideItems = [
   { image: "assets/images/video-preview-1.png" },
   { image: "assets/images/video-preview-1.png" },
@@ -34,14 +35,14 @@ function Main() {
           <p className="trending">
             Trending Hastags <VscSettingsGear />
           </p>
-          <p>
-            <Link to="/" className="seemore">
-              See more <FaArrowRight />
-            </Link>
-          </p>
+          <Link to="/" className="seemore">
+            See more <FaArrowRight />
+          </Link>
         </div>
-        <Navbar />
+        <Navbar className="mb-5" />
         <SliderItem />
+      </Container>
+      <div className="sec-container text-center">
         <h2 className="subtitle">
           Discover the world’s top creators & collectors
         </h2>
@@ -50,7 +51,7 @@ function Main() {
           home to the world's best NFT creators Connect with people, interact
           with them and trade your NFTs
         </p>
-      </Container>
+      </div>
       <Popular />
       <LateBids />
       <DiscoverNFT />

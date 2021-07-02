@@ -1,53 +1,54 @@
 .font-text {
   font-size: 12px;
 }
-.timeframe {
-  font: normal normal normal 15px/29px Montserrat;
-  color: #767d8f;
-}
 .creator-card {
-  width: 200px;
-  height: 250px;
-  border-radius: 20px;
-  padding: 25px;
-  margin-bottom: 40px;
+  width: 250px;
+  height: 300px;
+  border-radius: 25px;
+  padding: 23px 35px;
+  margin-bottom: 125px;
   background-color: #141416;
   transition: height 0.2s, margin-bottom 0.2s;
 }
 .creator-card:hover {
-  height: 270px;
-  margin-bottom: 0;
+  height: 326px;
+  margin-bottom: 99px;
 }
 .creator-card button {
-  width: 50px;
-  height: 25px;
-  border-radius: 25px;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
   border: none;
-  font-family: Montserrat;
-  font-size: 11px;
-  padding: 0;
+  font: normal normal normal 12px/15px Montserrat;
+  letter-spacing: 0px;
+  margin-bottom: 10.5px;
 }
 .font-icons {
+  line-height: 30px;
   font-size: 24px;
   color: white;
-  margin: 0;
+  margin-bottom: 10.5px;
 }
 .avatar {
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  transition: height 0.2s, width 0.2s, border-radius 0.2s;
-}
-.creator-card:hover .avatar {
   height: 100px;
   width: 100px;
   border-radius: 50px;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  transition: height 0.2s, width 0.2s, border-radius 0.2s;
+}
+.creator-card:hover .avatar {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
 }
 .card h6 {
+  font: normal normal normal 18px/22px Montserrat;
   color: #dddddd;
   margin-bottom: 0;
 }
 .card h6 ~ p {
-  font: normal normal normal 10px/15px Montserrat;
+  text-align: center;
+  font: normal normal normal 12px/15px Montserrat;
   color: #dddddd;
 }

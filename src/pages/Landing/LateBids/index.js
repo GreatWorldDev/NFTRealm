@@ -41,25 +41,30 @@ const bidData = [
 function LateBids() {
   return (
     <div className="border-bottom pb-5">
-      <Container>
-        <p className="popular mt-5">LATEST BIDS</p>
+      <div className="sec-container">
+        <p className="popular" style={{ marginTop: "71px" }}>
+          LATEST BIDS
+        </p>
         <div className="d-flex justify-content-end">
-          <p className="timeframe">
+          <p className="timeframe text-right">
             Network
             <br />
-            <Button variant="light">
-              Binance <BiChevronDownCircle />
+            <Button variant="light" className="white-btn">
+              Binance <BiChevronDownCircle style={{ float: "right" }} />
             </Button>
           </p>
         </div>
-        <div className="d-flex justify-content-around relative">
+        <div
+          className="d-flex justify-content-around relative"
+          style={{ marginBottom: "134.38px" }}
+        >
           {bidData.map((Data, index) => (
             <BidCard data={Data} key={index + "bid"} />
           ))}
           <BsArrowLeft className="left-arrow" />{" "}
           <BsArrowRight className="right-arrow" />
         </div>
-        <div className="d-flex justify-content-between mt-5">
+        <div className="d-flex justify-content-between">
           <div>
             <img
               src="assets/images/renew.png"
@@ -110,7 +115,7 @@ function LateBids() {
             </p>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

@@ -27,7 +27,7 @@ const userData = [
 function Popular() {
   return (
     <div className="popular-body">
-      <Container>
+      <div className="sec-container">
         <p className="popular">POPULAR MEMBERS</p>
         <div className="d-flex justify-content-between">
           <>
@@ -37,17 +37,17 @@ function Popular() {
             </p>
           </>
           <>
-            <p className="timeframe">
+            <p className="timeframe text-right">
               Timeframe
               <br />
-              <Button variant="light">
-                Today <BiChevronDownCircle />
+              <Button variant="light" className="white-btn">
+                Today <BiChevronDownCircle style={{ float: "right" }} />
               </Button>
             </p>
           </>
         </div>
-        <div className="">
-          <div className="d-flex justify-content-around relative">
+        <div>
+          <div className="d-flex justify-content-between relative">
             {userData.map((user, index) => (
               <UserCard
                 avatar={user.avatar}
@@ -62,7 +62,7 @@ function Popular() {
           </div>
           <button className="con-btn">Connect with members</button>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }

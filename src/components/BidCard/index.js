@@ -5,8 +5,8 @@ import "./style.css";
 function BidCard(props) {
   const { image, avatar, sort, name, currentbid, bnb } = props.data;
   return (
-    <div className="mx-2">
-      <div className="relative card-bid mb-2">
+    <div>
+      <div className="relative card-bid">
         <img src={image} alt="Category" className="bid-img" />
         <p className="favor">
           <BsHeart />
@@ -19,8 +19,8 @@ function BidCard(props) {
             src={avatar}
             alt="Avatar"
             className="rounded-circle"
-            width="60"
-            height="60"
+            width="65"
+            height="65"
           />
           <div className="text-left ml-2 name">
             <span className="kind">

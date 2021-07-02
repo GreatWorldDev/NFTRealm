@@ -5,7 +5,7 @@ function Search() {
     <div className="search-box">
       <BsSearch className="searchicon" />
       <input type="text" placeholder="Search" />
-      <span>Search</span>
+      {/* <span>Search</span> */}
     </div>
   );
 }

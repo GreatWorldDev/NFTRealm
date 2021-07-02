@@ -1,0 +1,78 @@
+header {
+  padding: 65px 40px;
+}
+.wallet-btn {
+  width: 200px;
+  height: 60px;
+  background-color: #141416;
+  border: 1px solid #dddddd;
+  border-radius: 40px;
+  outline: none;
+  border: 1px solid white;
+  font: normal normal normal 18px/22px Montserrat;
+}
+.headerlist {
+  line-height: 35px;
+  font: Montserrat;
+  color: white;
+}
+.headerlist:hover {
+  color: grey;
+}
+.wallet-btn:hover {
+  background-color: #141416;
+}
+.search-box {
+  display: inline-block;
+  position: relative;
+  line-height: 55px;
+}
+.search-box input[type="text"]::placeholder {
+  line-height: 40px;
+  font: Montserrat;
+  color: white;
+}
+.search-box input[type="text"] {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  width: 115px;
+  height: 22px;
+  padding: 5px 0px 5px 10px;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+  background-color: #141416;
+  transition: width 800ms cubic-bezier(0.5, -0.5, 0.5, 0.5) 600ms;
+}
+.search-box input[type="text"]:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.search-box input[type="text"]:focus,
+.search-box input[type="text"]:not(:placeholder-shown) {
+  width: 225px;
+  transition: width 800ms cubic-bezier(0.5, -0.5, 0.5, 1.5);
+}
+.search-box input[type="text"]:focus + span,
+.search-box input[type="text"]:not(:placeholder-shown) + span {
+  bottom: 13px;
+  right: 10px;
+  transition: bottom 300ms ease-out 800ms, right 300ms ease-out 800ms;
+}
+.search-box input[type="text"]:focus + span:after,
+.search-box input[type="text"]:not(:placeholder-shown) + span:after {
+  top: 0;
+  right: 10px;
+  opacity: 1;
+  transition: top 300ms ease-out 1100ms, right 300ms ease-out 1100ms,
+    opacity 300ms ease 1100ms;
+}
+.search-box span {
+  transition: bottom 300ms ease-out 300ms, right 300ms ease-out 300ms;
+}
+.search-box span:after {
+  transition: top 300ms ease-out, right 300ms ease-out, opacity 300ms ease-out;
+}
+.searchicon {
+  font-size: 30px;
+}

@@ -1,0 +1,53 @@
+.description {
+  text-align: center;
+  margin-top: 60px;
+  color: #dddddd;
+  font: normal normal normal 18px/22px Montserrat;
+}
+.maintitle {
+  color: #dddddd;
+  font: normal normal 900 36px/44px Montserrat;
+}
+.explore-btn {
+  width: 300px;
+  height: 60px;
+  border-radius: 30px !important;
+  border-color: #dddddd !important;
+  color: white !important;
+  outline: none;
+  font: normal normal normal 18px/22px Montserrat;
+}
+.trending {
+  text-align: left;
+  margin-bottom: 0;
+  font: normal normal bold 36px/44px Montserrat;
+  letter-spacing: 0px;
+  color: #dddddd;
+  opacity: 1;
+}
+.seemore {
+  font: normal normal normal 15px/22px Montserrat;
+  letter-spacing: 0px;
+  color: #767d8f;
+  opacity: 1;
+  text-decoration: none;
+  margin-bottom: 0 !important;
+}
+.seemore:hover,
+seemore:focus {
+  color: white;
+  text-decoration: none;
+}
+.subtitle {
+  margin-top: 113px;
+  margin-bottom: 30px;
+  font: normal normal bold 60px/73px Montserrat;
+  color: #dddddd;
+}
+.subdescription {
+  max-width: 1283px;
+  margin: 0 auto;
+  margin-bottom: 175.5px;
+  font: normal normal normal 24px/29px Montserrat;
+  color: #dddddd;
+}

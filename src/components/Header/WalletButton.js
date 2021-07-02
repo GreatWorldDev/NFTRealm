@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 export default function WalletButton(props) {
   const { walletData, isClicked, onClick } = props;
   return (
-    <Button
+    <button
       variant="outline-light"
       className="text-white wallet-btn"
       onClick={onClick}
@@ -22,6 +22,6 @@ export default function WalletButton(props) {
       ) : (
         "Connect Wallet"
       )}
-    </Button>
+    </button>
   );
 }
