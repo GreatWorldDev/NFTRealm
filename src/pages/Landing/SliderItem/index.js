@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import { Button } from "react-bootstrap";
 import EthCard from "../../../components/EthCard";
+import { Link } from "react-router-dom";
 import "./style.css";
 function Slider() {
-  const [isfollowClicked, setFollowClicked] = useState(false);
+  const [isfollowClicked, setFollowClicked] = useState(true);
   useEffect(() => {
-    setFollowClicked(false);
+    setFollowClicked(true);
   }, []);
   const onClick = () => {
     setFollowClicked(!isfollowClicked);
@@ -39,20 +39,22 @@ function Slider() {
               style={{ maxWidth: "439px" }}
               className="d-flex align-items-center justify-content-between"
             >
-              <div className="d-flex align-items-center">
-                <img
-                  src="assets/images/avatar.jpg"
-                  alt="Avatar"
-                  className="rounded-circle"
-                  width="99"
-                  height="99"
-                />
-                <p className="text-left avatar-text ml-2">
-                  <span className="job">Creator</span>
-                  <br />
-                  Jessica Brandel
-                </p>
-              </div>
+              <Link to="/Profile">
+                <div className="d-flex align-items-center">
+                  <img
+                    src="assets/images/avatar.jpg"
+                    alt="Avatar"
+                    className="rounded-circle"
+                    width="99"
+                    height="99"
+                  />
+                  <p className="text-left avatar-text ml-2">
+                    <span className="job">Creator</span>
+                    <br />
+                    Jessica Brandel
+                  </p>
+                </div>
+              </Link>
               <button
                 className={`followbtn ${
                   !isfollowClicked && "followbtn-toggle"

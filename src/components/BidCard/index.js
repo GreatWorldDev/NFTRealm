@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import { BsHeart } from "react-icons/bs";
 import "./style.css";
 function BidCard(props) {
@@ -25,7 +24,7 @@ function BidCard(props) {
           <div className="text-left ml-2 name">
             <span className="kind">
               Creator{" "}
-              <span className={sort == "PRO" ? "pro" : "new"}>
+              <span className={sort === "PRO" ? "pro" : "new"}>
                 &nbsp;{sort}&nbsp;{" "}
               </span>
             </span>
@@ -39,6 +38,7 @@ function BidCard(props) {
         <div className="d-flex">
           <img
             src="assets/images/chart.png"
+            alt=""
             width="12"
             height="16"
             style={{ marginRight: "5px" }}
@@ -46,7 +46,7 @@ function BidCard(props) {
           <p className="bid-font"> Current BID {currentbid} BNB</p>
         </div>
         <div className="bid-font">
-          <img src="assets/images/Group181.png" />
+          <img src="assets/images/Group181.png" alt="Eye" />
           &nbsp;View NFT
         </div>
       </div>

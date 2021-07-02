@@ -5,7 +5,6 @@ import { VscSettingsGear } from "react-icons/vsc";
 import Navbar from "../../../components/Navbar";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { Card } from "react-bootstrap";
 import SliderItem from "../SliderItem";
 import Slider from "react-touch-drag-slider";
 import Popular from "../Popular";
@@ -13,12 +12,6 @@ import LateBids from "../LateBids";
 import DiscoverNFT from "../DiscoverNFT";
 import Footer from "../../../components/Footer";
 import "./style.css";
-const slideItems = [
-  { image: "assets/images/video-preview-1.png" },
-  { image: "assets/images/video-preview-1.png" },
-  { image: "assets/images/video-preview-1.png" },
-  { image: "assets/images/video-preview-1.png" },
-];
 function Main() {
   return (
     <>

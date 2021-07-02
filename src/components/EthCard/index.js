@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Card, Col, Row } from "react-bootstrap";
+import React from "react";
+import { Card, Col } from "react-bootstrap";
 import { BsHeart, BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import { Button } from "react-bootstrap";
 import "./style.css";
@@ -29,6 +29,7 @@ function EthCard() {
             <Col className="d-flex justify-content-end">
               <img
                 src="assets/images/chart.png"
+                alt="bid"
                 width="21.8"
                 height="29"
                 style={{ opacity: "0.5", marginRight: "5px" }}
@@ -43,14 +44,14 @@ function EthCard() {
           <Col className="d-flex justify-content-around">
             <div>
               <div className="buyprice">
-                <img src="assets/images/Group191.png" />
+                <img src="assets/images/Group191.png" alt="price" />
                 &nbsp;Buy Price
               </div>
               <p className="buy-eth">5 ETH</p>
             </div>
             <div>
               <div className="buyprice">
-                <img src="assets/images/Group192.png" />
+                <img src="assets/images/Group192.png" alt="Ending" />
                 &nbsp;Auction Ending
               </div>
               <div className="d-flex justify-content-between undertime">
@@ -87,7 +88,7 @@ function EthCard() {
             className="d-flex justify-content-around"
           >
             <div className="font-view mr-2">
-              <img src="assets/images/Group181.png" />
+              <img src="assets/images/Group181.png" alt="nft" />
               &nbsp;View NFT
             </div>
             <div className="font-view">

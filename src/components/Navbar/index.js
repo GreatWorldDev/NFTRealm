@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Container, Col, Row, Nav } from "react-bootstrap";
+import React from "react";
+import { Nav } from "react-bootstrap";
 const navbarItem = [
   { href: "/", color: "#3772FF", content: "Coloring" },
   { href: "/", color: "#9757D7", content: "Sports" },

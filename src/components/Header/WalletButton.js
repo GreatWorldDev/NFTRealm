@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
+import React from "react";
 export default function WalletButton(props) {
   const { walletData, isClicked, onClick } = props;
   return (

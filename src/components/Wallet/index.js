@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Popover } from "react-bootstrap";
 import { IoCopyOutline, IoPerson } from "react-icons/io5";
 import { FiMessageSquare } from "react-icons/fi";
 import { WiLightning } from "react-icons/wi";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Switch from "react-switch";
 import "./style.css";
 
 const Wallet = (

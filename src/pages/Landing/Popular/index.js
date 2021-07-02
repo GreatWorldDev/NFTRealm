@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import React from "react";
 import { BiChevronDownCircle } from "react-icons/bi";
 import { Button } from "react-bootstrap";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";

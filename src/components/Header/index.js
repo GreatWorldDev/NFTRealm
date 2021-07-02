@@ -3,7 +3,7 @@ import WalletButton from "./WalletButton";
 import Search from "./Search";
 import { Link } from "react-router-dom";
 import Wallet from "../Wallet";
-import { OverlayTrigger, Popover } from "react-bootstrap";
+import { OverlayTrigger } from "react-bootstrap";
 import "./style.css";
 const walletData = {
   avatar: "assets/images/avatar.jpg",
@@ -25,7 +25,7 @@ function Header() {
             to="/"
             className="d-flex align-items-center mb-4 mb-lg-0 text-dark text-decoration-none"
           >
-            <img src="assets/images/Group153.png"></img>
+            <img src="assets/images/Group153.png" alt="logo"></img>
           </Link>
 
           <div className="nav col-12 col-lg-auto mb-5 mb-lg-0 me-lg-3 d-flex">

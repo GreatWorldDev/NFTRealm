@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import React from "react";
 import { BiPlusCircle } from "react-icons/bi";
 import { BsArrowUpRight } from "react-icons/bs";
-import { Button, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "./style.css";
 function UserCard(props) {
   const { avatar, name, followNum, index } = props;
@@ -11,9 +10,10 @@ function UserCard(props) {
       <div className="d-flex justify-content-between align-items-center border-bottom mb-2">
         <button
           style={{
-            backgroundColor: index == 0 ? "#45B26B" : "",
-            backgroundColor: index == 1 ? "#9757D7" : "",
-            backgroundColor: index == 2 ? "#3772FF" : "",
+            backgroundColor: "#45B26B",
+            // backgroundColor: index === 0 ? "#45B26B" : "",
+            // backgroundColor: index === 1 ? "#9757D7" : "",
+            // backgroundColor: index === 2 ? "#3772FF" : "",
           }}
         >
           #{index + 1}
@@ -25,11 +25,11 @@ function UserCard(props) {
       </div>
       <div className="d-flex justify-content-between align-items-center font-text">
         <div className="text-white">
-          <img src="assets/images/gemstone.png" />
+          <img src="assets/images/gemstone.png" alt="creator" />
           &nbsp;Creator
         </div>
         <div className="text-white">
-          <img src="assets/images/goal.png" />
+          <img src="assets/images/goal.png" alt="goal" />
           &nbsp;LvL 15
         </div>
       </div>
