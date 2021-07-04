@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import EthCard from "../../../components/EthCard";
 import { Link } from "react-router-dom";
 import Preview from "../../../components/Preview";

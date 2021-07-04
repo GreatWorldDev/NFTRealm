@@ -53,8 +53,8 @@ function Main() {
         <Col lg={6}>
           <Preview data={itemData[1]} />
         </Col>
-        <Col lg={6}>
-          <ul>
+        <Col lg={6} className="px-64">
+          <ul className="side-col">
             <li>
               <p className="font-46 text-white mb-20">Bloody Soldier</p>
             </li>

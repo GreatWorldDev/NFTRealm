@@ -54,6 +54,7 @@ seemore:focus {
 @media (max-width: 768px) {
   .subtitle {
     text-align: center;
+    font: normal normal bold 47px/73px Montserrat;
   }
   .subdescription {
     text-align: center;
@@ -64,5 +65,9 @@ seemore:focus {
   }
   .seemore {
     display: none;
+  }
+  .trending {
+    text-align: center;
+    font: normal normal bold 31px/41px Montserrat;
   }
 }

@@ -1,18 +1,6 @@
 .relative {
   position: relative;
 }
-.left-arrow {
-  position: absolute;
-  top: 30%;
-  left: -56.5px;
-  color: white;
-}
-.right-arrow {
-  position: absolute;
-  top: 30%;
-  right: -56.5px;
-  color: white;
-}
 .con-btn {
   /* position: absolute; */
   bottom: 20px;

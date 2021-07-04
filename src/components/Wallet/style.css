@@ -38,3 +38,13 @@ p {
 .bnb a {
   border-bottom: 1px solid #3772ff !important;
 }
+.wallet-list a {
+  text-decoration: none !important;
+}
+.wallet-list a:hover {
+  text-decoration: none !important;
+}
+.wallet-list p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}

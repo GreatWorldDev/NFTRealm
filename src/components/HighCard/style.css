@@ -1,6 +1,6 @@
 .high-card {
   max-width: 600px;
-  height: 383px;
+  height: auto;
   background-color: #23262f;
   border-radius: 25px;
 }

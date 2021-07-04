@@ -82,3 +82,8 @@
 .max {
   max-width: 439px;
 }
+@media (max-width: 768px) {
+  .price {
+    font: normal normal 900 47px/73px Montserrat;
+  }
+}

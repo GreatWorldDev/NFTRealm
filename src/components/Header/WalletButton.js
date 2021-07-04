@@ -11,7 +11,7 @@ export default function WalletButton(props) {
         <div className="d-flex">
           <img
             src={walletData.avatar}
-            alt="mdo"
+            alt="ETH"
             width="45"
             height="45"
             className="rounded-circle mr-2"

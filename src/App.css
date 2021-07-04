@@ -24,7 +24,20 @@ body {
   height: 40vmin;
   pointer-events: none;
 }
-
+.left-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+  left: -56.5px;
+  color: white;
+}
+.right-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translate(0, -50%);
+  right: -56.5px;
+  color: white;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -228,5 +241,26 @@ body {
   .popular {
     font: normal normal 900 60px/78px Montserrat;
     text-align: center;
+  }
+  .btn-60 {
+    width: 90%;
+  }
+  .side-col {
+    text-align: center;
+  }
+  .font-46 {
+    font: normal normal 900 40px/57px Montserrat;
+  }
+  .left-arrow {
+    display: none;
+  }
+  .right-arrow {
+    display: none;
+  }
+}
+@media (max-width: 993px) {
+  .px-64 {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

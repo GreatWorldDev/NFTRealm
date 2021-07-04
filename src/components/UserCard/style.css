@@ -52,3 +52,8 @@
   font: normal normal normal 12px/15px Montserrat;
   color: #dddddd;
 }
+@media (max-width: 600px) {
+  .creator-card {
+    margin-bottom: 10px;
+  }
+}

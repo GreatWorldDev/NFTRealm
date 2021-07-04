@@ -11,6 +11,16 @@ header {
   border: 1px solid white;
   font: normal normal normal 18px/22px Montserrat;
 }
+.upload-btn {
+  width: 130px;
+  height: 60px;
+  border: none;
+  margin-bottom: 15px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 40px;
+  font: normal normal normal 18px/22px Montserrat;
+}
 .headerlist {
   line-height: 35px;
   font: Montserrat;
@@ -50,8 +60,8 @@ header {
 }
 .search-box input[type="text"]:focus,
 .search-box input[type="text"]:not(:placeholder-shown) {
-  width: 225px;
-  transition: width 800ms cubic-bezier(0.5, -0.5, 0.5, 1.5);
+  width: 180px;
+  transition: width 800ms cubic-bezier(0.2, -0.5, 0.8, 1.5);
 }
 .search-box input[type="text"]:focus + span,
 .search-box input[type="text"]:not(:placeholder-shown) + span {
@@ -75,4 +85,34 @@ header {
 }
 .searchicon {
   font-size: 30px;
+  color: white;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 48px;
+  height: 7px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #f5f1f1;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1) !important;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .logo-hamburger {
+    width: 90%;
+  }
+  .nav {
+    display: none;
+  }
 }

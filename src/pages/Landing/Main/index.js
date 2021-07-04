@@ -6,7 +6,7 @@ import Navbar from "../../../components/Navbar";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import SliderItem from "../SliderItem";
-import Slider from "react-touch-drag-slider";
+// import Slider from "react-touch-drag-slider";
 import Popular from "../Popular";
 import LateBids from "../LateBids";
 import DiscoverNFT from "../DiscoverNFT";

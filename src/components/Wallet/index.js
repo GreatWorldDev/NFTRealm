@@ -5,6 +5,7 @@ import { FiMessageSquare } from "react-icons/fi";
 import { WiLightning } from "react-icons/wi";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import Switch from "react-switch";
 import "./style.css";
 
 const Wallet = (
@@ -30,7 +31,7 @@ const Wallet = (
             <span>62 BNB</span>&nbsp;
           </p>
         </div>
-        <div className="d-flex flex-column justify-content-center px-3">
+        <div className="d-flex flex-column justify-content-center px-3 wallet-list">
           <Link to="/" style={{ borderBottom: "1px solid #3772FF" }}>
             <p>
               <IoPerson />
@@ -46,7 +47,16 @@ const Wallet = (
           <Link to="/" style={{ borderBottom: "1px solid #3772FF" }}>
             <p>
               <WiLightning />
-              &nbsp; Dark Theme
+              &nbsp; Dark Theme &nbsp;
+              <Switch
+                checked={true}
+                uncheckedIcon={false}
+                checkedIcon={false}
+                width={30}
+                height={15}
+                handleDiameter={15}
+                onColor="#3772FF"
+              />
             </p>
           </Link>
           <Link to="/" style={{ borderBottom: "1px solid #3772FF" }}>
