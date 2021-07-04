@@ -27,7 +27,6 @@ function Header() {
           >
             <img src="assets/images/Group153.png" alt="logo"></img>
           </Link>
-
           <div className="nav col-12 col-lg-auto mb-5 mb-lg-0 me-lg-3 d-flex">
             <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-end mb-md-0 text-white">
               <li>
@@ -43,19 +42,21 @@ function Header() {
                   Find People
                 </Link>
               </li>
-              <li>
-                <OverlayTrigger
-                  trigger="click"
-                  placement="bottom"
-                  overlay={Wallet}
-                >
-                  <WalletButton
-                    walletData={walletData}
-                    isClicked={isClicked}
-                    onClick={handleClick}
-                  />
-                </OverlayTrigger>
-              </li>
+              {!window.location.href.includes("Profile") && (
+                <li>
+                  <OverlayTrigger
+                    trigger="click"
+                    placement="bottom"
+                    overlay={Wallet}
+                  >
+                    <WalletButton
+                      walletData={walletData}
+                      isClicked={isClicked}
+                      onClick={handleClick}
+                    />
+                  </OverlayTrigger>
+                </li>
+              )}
             </ul>
           </div>
         </div>

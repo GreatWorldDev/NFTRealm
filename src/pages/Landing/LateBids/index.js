@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Card, Button, Row, Col } from "react-bootstrap";
-import { BsArrowRight, BsArrowLeft, BsHeart } from "react-icons/bs";
+import { Button } from "react-bootstrap";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import BidCard from "../../../components/BidCard";
 import { BiChevronDownCircle } from "react-icons/bi";
 import "./style.css";
@@ -55,7 +55,7 @@ function LateBids() {
           </p>
         </div>
         <div
-          className="d-flex justify-content-around relative"
+          className="d-flex justify-content-around flex-wrap relative"
           style={{ marginBottom: "134.38px" }}
         >
           {bidData.map((Data, index) => (
@@ -64,7 +64,7 @@ function LateBids() {
           <BsArrowLeft className="left-arrow" />{" "}
           <BsArrowRight className="right-arrow" />
         </div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-around flex-wrap">
           <div>
             <img
               src="assets/images/renew.png"

@@ -43,6 +43,7 @@ footer a:hover {
 }
 .email-input::placeholder {
   color: white !important;
+  font: Montserrat;
   opacity: 1 !important;
 }
 .media-links {

@@ -2,7 +2,22 @@ import React, { useEffect, useState } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import EthCard from "../../../components/EthCard";
 import { Link } from "react-router-dom";
+import Preview from "../../../components/Preview";
 import "./style.css";
+const itemData = [
+  {
+    image: "assets/images/video-preview-1.png",
+    audio: "assets/audios/audio.mp3",
+  },
+  {
+    image: "assets/images/video-preview-1.png",
+    audio: "assets/audios/audio.mp3",
+  },
+  {
+    image: "assets/images/video-preview-1.png",
+    audio: "assets/audios/audio.mp3",
+  },
+];
 function Slider() {
   const [isfollowClicked, setFollowClicked] = useState(true);
   useEffect(() => {
@@ -10,27 +25,14 @@ function Slider() {
   }, []);
   const onClick = () => {
     setFollowClicked(!isfollowClicked);
-    console.log(isfollowClicked);
   };
   return (
     <div className="slider">
       <Row>
-        <Col xs={12} md={7}>
-          <Card className="card">
-            <Card.Img
-              src="assets/images/video-preview-1.png"
-              alt="Card image"
-              className="video-preview"
-            />
-            <Card.ImgOverlay>
-              <audio controls className="audio">
-                <source src="horse.ogg" type="audio/ogg" />
-                <source src="horse.mp3" type="audio/mpeg" />
-              </audio>
-            </Card.ImgOverlay>
-          </Card>
+        <Col xs={12} md={12} lg={7}>
+          <Preview data={itemData[1]} />
         </Col>
-        <Col xs={12} md={5}>
+        <Col xs={12} md={12} lg={5}>
           <Col
             md={12}
             className="d-flex align-items-center justify-content-center"

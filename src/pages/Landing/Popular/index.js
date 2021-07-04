@@ -46,7 +46,7 @@ function Popular() {
           </>
         </div>
         <div>
-          <div className="d-flex justify-content-between relative">
+          <div className="d-flex justify-content-around flex-wrap relative text-center">
             {userData.map((user, index) => (
               <UserCard
                 avatar={user.avatar}

@@ -69,3 +69,18 @@
 .explore:hover {
   background-color: #007bfd;
 }
+.side-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 1636px) {
+  .side-cards {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 992px) {
+  .side-cards {
+    margin-left: 0;
+  }
+}

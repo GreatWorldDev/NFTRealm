@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Button } from "react-bootstrap";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { VscSettingsGear } from "react-icons/vsc";
 import Navbar from "../../../components/Navbar";
 import { FaArrowRight } from "react-icons/fa";

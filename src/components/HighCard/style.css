@@ -1,0 +1,10 @@
+.high-card {
+  max-width: 600px;
+  height: 383px;
+  background-color: #23262f;
+  border-radius: 25px;
+}
+.con-price {
+  color: #767d8f;
+  font: normal normal normal 18px/22px Montserrat;
+}

@@ -1,0 +1,30 @@
+.background {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+.tab-btn span {
+  width: 150px;
+  height: 60px;
+  color: #767d8f;
+  font: normal normal bold 24px/29px Montserrat;
+  border-radius: 30px;
+  line-height: 60px;
+}
+.active {
+  background-color: white;
+  color: black;
+}
+.load-btn {
+  width: 250px;
+  height: 75px;
+}
+.mr-71 {
+  margin-right: 71px;
+}
+
+@media (max-width: 400px) {
+  .mr-71 {
+    margin-right: 0;
+  }
+}

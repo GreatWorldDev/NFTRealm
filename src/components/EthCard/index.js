@@ -100,12 +100,13 @@ function EthCard() {
           <Button className="buybtn mt-2 mb-4">Buy Now</Button>
         </Col>
         <Col>
-          <Button className="bidbtn mt-2 mb-4" variant="outline-dark">
+          <Button className="bidbtn mt-2 mb-4" variant="outline-light">
             Place a Bid
           </Button>
         </Col>
         <Col>
-          <BsArrowLeft className="arrow" /> <BsArrowRight className="arrow" />
+          <BsArrowLeft className="arrow text-white" />{" "}
+          <BsArrowRight className="arrow text-white" />
         </Col>
       </div>
     </>

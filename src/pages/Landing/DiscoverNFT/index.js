@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Card, Button, Row, Col, Accordion } from "react-bootstrap";
-import { BsArrowRight, BsArrowLeft, BsHeart, BsFunnel } from "react-icons/bs";
+import { Card, Accordion } from "react-bootstrap";
+import { BsArrowRight, BsArrowLeft, BsFunnel } from "react-icons/bs";
 import BidCard from "../../../components/BidCard";
 import { BiChevronDownCircle } from "react-icons/bi";
-import { useAccordionToggle } from "react-bootstrap/AccordionToggle";
 import "./style.css";
 const bidData = [
   {
@@ -39,11 +38,6 @@ const bidData = [
     bnb: 2,
   },
 ];
-const collapseData = [
-  { title: "PRICE", btn: "Highest Price" },
-  { title: "LIKES", btn: "Most Liked" },
-  { title: "CREATOR", btn: "PRO" },
-];
 
 function DiscoverNFT() {
   return (
@@ -52,7 +46,7 @@ function DiscoverNFT() {
       <Accordion>
         <Accordion.Toggle as={Card.Header} eventKey="0">
           <div className="d-flex justify-content-between">
-            <p className="timeframe">
+            <p>
               <button className="button">
                 Recently Added <BiChevronDownCircle />
               </button>
@@ -64,7 +58,7 @@ function DiscoverNFT() {
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">
           <Card.Body>
-            <div className="d-flex justify-content-between border-top collapse pb-5">
+            <div className="d-flex justify-content-around flex-wrap border-top collapse pb-5">
               <div className="text-left">
                 <h5>PRICE</h5>
                 <button className="button">
@@ -98,14 +92,14 @@ function DiscoverNFT() {
           </Card.Body>
         </Accordion.Collapse>
       </Accordion>
-      <div className="d-flex justify-content-between relative">
+      <div className="d-flex justify-content-around flex-wrap relative">
         {bidData.map((Data, index) => (
           <BidCard data={Data} key={index + "nft"} />
         ))}
         <BsArrowLeft className="left-arrow" />{" "}
         <BsArrowRight className="right-arrow" />
       </div>
-      <div className="d-flex justify-content-between relative">
+      <div className="d-flex justify-content-around flex-wrap relative">
         {bidData.map((Data, index) => (
           <BidCard data={Data} key={index + "bid"} />
         ))}

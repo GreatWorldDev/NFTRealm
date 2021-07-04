@@ -51,3 +51,18 @@ seemore:focus {
   font: normal normal normal 24px/29px Montserrat;
   color: #dddddd;
 }
+@media (max-width: 768px) {
+  .subtitle {
+    text-align: center;
+  }
+  .subdescription {
+    text-align: center;
+  }
+  .creator,
+  .timeframe {
+    display: none;
+  }
+  .seemore {
+    display: none;
+  }
+}

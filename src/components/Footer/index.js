@@ -13,7 +13,7 @@ function Footer() {
     setTheme(!darkTheme);
   };
   return (
-    <footer className="d-flex justify-content-between border-top">
+    <footer className="d-flex justify-content-around flex-wrap border-top">
       <div className="col text-left">
         <Link to="/">
           <img src="assets/images/Group153.png" alt="logo" className="mb-3" />
@@ -24,6 +24,11 @@ function Footer() {
           <Switch
             onChange={handleChange}
             checked={darkTheme}
+            uncheckedIcon={false}
+            checkedIcon={false}
+            width={30}
+            height={15}
+            handleDiameter={15}
             onColor="#3772FF"
           />
         </div>
@@ -61,7 +66,7 @@ function Footer() {
           <div className="email d-flex justify-content-center align-items-center">
             <input
               type="text"
-              placeholer="Enter your Email"
+              placeholder="Enter your Email"
               className="email-input"
             />
             <button className="email-btn">
