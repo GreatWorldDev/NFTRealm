@@ -61,7 +61,7 @@ body {
   font: normal normal normal 24px/29px Montserrat;
 }
 .card {
-  border-radius: 40px;
+  border-radius: 20px;
   background-color: #141416;
   position: relative;
 }

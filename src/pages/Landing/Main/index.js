@@ -53,9 +53,11 @@ function Main() {
           artists & collectors
         </p>
         <h2 className="maintitle">The #1 community focused NFT Marketplace</h2>
-        <Button variant="outline-primary" className="explore-btn my-5">
-          Explore Marketplace
-        </Button>
+        <Link to="/search">
+          <Button variant="outline-primary" className="explore-btn my-5">
+            Explore Marketplace
+          </Button>
+        </Link>
         <div className="d-flex justify-content-between">
           <p className="trending">
             Trending Hastags <VscSettingsGear />

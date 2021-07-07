@@ -1,0 +1,302 @@
+.search-content {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.search-bar {
+  padding-bottom: 37px;
+  border-bottom: 2px solid #767d8f;
+}
+.search-outline {
+  width: 303px;
+  height: 50px;
+  padding: 10px 5px;
+  padding-left: 10px;
+  border: 2px solid #767d8f;
+  border-radius: 15px;
+}
+.email-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #3772ff;
+}
+.search-input {
+  border: none;
+  outline: none;
+  width: 270px;
+  background-color: #141416;
+  color: white;
+}
+.search-input::placeholder {
+  color: #767d8f !important;
+  font: Montserrat;
+  opacity: 1 !important;
+}
+.catalog__title {
+  margin-right: auto;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: -0.01em;
+  color: white;
+}
+.s-tab {
+  height: 30px;
+  padding: 0px 15px;
+  border-radius: 30px;
+  color: white;
+  line-height: 30px !important;
+}
+/* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+select {
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  box-sizing: border-box;
+  align-items: center;
+  white-space: pre;
+  -webkit-rtl-ordering: logical;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+  cursor: default;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  border-radius: 0px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+}
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+.select {
+  float: none;
+  width: 100%;
+  height: 48px;
+  padding: 0 48px 0 16px;
+  box-shadow: inset 0 0 0 2px #e6e8ec;
+  background: #fcfcfd;
+  border-radius: 12px;
+  border: none;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.dark .select {
+  background: #141416;
+  box-shadow: inset 0 0 0 2px #353945;
+  -webkit-appearance: none;
+}
+.dark .select.open {
+  box-shadow: inset 0 0 0 2px #777e90;
+}
+.nice-select:active,
+.nice-select.open,
+.nice-select:focus {
+  border-color: #999;
+}
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
+  border-radius: 5px;
+  border: solid 1px #e8e8e8;
+  box-sizing: border-box;
+  clear: both;
+  cursor: pointer;
+  display: block;
+  float: left;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  height: 42px;
+  line-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 30px;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  width: auto;
+}
+.select:before {
+  box-shadow: inset 0 0 0 2px #353945;
+  background-image: url(./../../../icon/Iconionic-ios-arrow-dropdown.png);
+}
+.select.open:before {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.select:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #e6e8ec;
+  background: url(./../../../icon/Iconionic-ios-arrow-dropdown.png) no-repeat
+    50% 50%/10px auto;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.nice-select.open:after {
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.select:after {
+  display: none;
+}
+.nice-select:after {
+  border-bottom: 2px solid #999;
+  border-right: 2px solid #999;
+  content: "";
+  display: block;
+  height: 5px;
+  margin-top: -4px;
+  pointer-events: none;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  -webkit-transform-origin: 66% 66%;
+  transform-origin: 66% 66%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: all 0.15s ease-in-out;
+  width: 5px;
+}
+.select .current {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.select .list {
+  background: #141416;
+  border-color: #353945;
+  box-shadow: 0 4px 12px rgb(20 20 22 / 10%);
+}
+.nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1) translateY(0);
+  transform: scale(1) translateY(0);
+}
+.select .list {
+  right: 0;
+  margin-top: 2px;
+  border-radius: 12px;
+  background: #fcfcfd;
+  border: 2px solid #e6e8ec;
+  box-shadow: 0 4px 12px rgb(35 38 47 / 10%);
+}
+.nice-select .list {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgb(68 68 68 / 11%);
+  box-sizing: border-box;
+  margin-top: 4px;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transform: scale(0.75) translateY(-21px);
+  transform: scale(0.75) translateY(-21px);
+  transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+  z-index: 9;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.select .option:hover,
+.select .option.focus,
+.select .option.selected.focus {
+  background: #23262f;
+}
+.select .option:hover,
+.select .option.focus,
+.select .option.selected.focus {
+  background: #f4f5f6;
+}
+.nice-select .option:hover,
+.nice-select .option.focus,
+.nice-select .option.selected.focus {
+  background-color: #f6f6f6;
+}
+.select .option.selected {
+  font-weight: 500;
+  color: #3772ff;
+}
+.nice-select .option.selected {
+  font-weight: bold;
+}
+.select .option {
+  min-height: auto;
+  padding: 10px 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  transition: all 0.2s;
+}
+.select .option {
+  min-height: auto;
+  padding: 10px 14px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.nice-select .option {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  list-style: none;
+  min-height: 40px;
+  outline: none;
+  padding-left: 18px;
+  padding-right: 29px;
+  text-align: left;
+  transition: all 0.2s;
+}

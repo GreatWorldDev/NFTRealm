@@ -1,10 +1,12 @@
-.card-bid {
-  display: inline-block;
-  overflow: hidden;
-  max-width: 350px;
+.search-card {
+  max-width: 360px;
+  padding: 13px;
+  margin: 5px;
   border-radius: 20px;
-  margin-bottom: 30px;
+  box-shadow: 2px 6px 14px black;
+  background-color: #23262f;
 }
+
 .bid-img {
   width: 100%;
   object-fit: fill;
@@ -55,38 +57,37 @@
   right: 30px;
   opacity: 1;
 }
-.pro {
+.s-pro {
   background-color: #45b26b;
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
-  font-size: 12px;
+  font-size: 9px;
 }
-.new {
+.s-new {
   background-color: #007bff;
-  border-radius: 5px;
+  border-radius: 3px;
   color: white;
-  font-size: 12px;
+  font-size: 9px;
 }
 .name {
-  font: normal normal normal 12px/15px Montserrat;
+  font: normal normal normal 10px/15px Montserrat;
   letter-spacing: 0px;
   color: #dddddd;
 }
 .kind {
   color: #767d8f;
-  font: normal normal normal 12px/15px Montserrat;
+  font: normal normal normal 9px/12px Montserrat;
 }
-.bnb-num {
-  width: 125px;
+.search-bnb-num {
   text-align: center;
-  line-height: 45px;
-  font: normal normal normal 18px/22px Montserrat;
+  font: normal normal normal 12px Montserrat;
   color: #45b26b;
   border: 1px solid #45b26b;
+  padding: 5px;
+  margin-left: 3px;
   margin: 0;
-  padding: 10px;
 }
-.bid-font {
+.s-bid-font {
   color: #767d8f;
-  font-size: 12px;
+  font-size: 9px;
 }

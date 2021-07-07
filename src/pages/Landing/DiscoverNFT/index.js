@@ -56,6 +56,35 @@ const settings = {
   speed: 500,
   slidesToShow: 4,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1434,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 1096,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 797,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+  ],
 };
 function DiscoverNFT() {
   const [isFilter, setisFilter] = useState(true);

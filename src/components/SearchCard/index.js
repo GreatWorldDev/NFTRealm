@@ -11,7 +11,7 @@ function BidCard(props) {
     setisFavor(!isFavor);
   };
   return (
-    <div>
+    <div className="search-card">
       <div className="relative card-bid">
         <img src={image} alt="Category" className="bid-img" />
         <div onClick={handleClick}>
@@ -39,14 +39,14 @@ function BidCard(props) {
                 src={avatar}
                 alt="Avatar"
                 className="rounded-circle"
-                width="65"
-                height="65"
+                width="50"
+                height="50"
               />
 
-              <div className="text-left ml-2 name">
+              <div className="text-left mx-2 name">
                 <span className="kind">
                   Creator{" "}
-                  <span className={sort === "PRO" ? "pro" : "new"}>
+                  <span className={sort === "PRO" ? "s-pro" : "s-new"}>
                     &nbsp;{sort}&nbsp;{" "}
                   </span>
                 </span>
@@ -54,7 +54,7 @@ function BidCard(props) {
                 {name}
               </div>
             </div>
-            <p className="bnb-num"> {bnb} BNB </p>
+            <p className="search-bnb-num"> {bnb} BNB </p>
           </div>
         </div>
       </Link>
@@ -69,9 +69,9 @@ function BidCard(props) {
               alt=""
               width="12"
               height="16"
-              style={{ marginRight: "5px" }}
+              style={{ marginRight: "3px" }}
             />
-            <p className="bid-font m-0"> Current BID {currentbid} BNB</p>
+            <p className="s-bid-font m-0"> Current BID {currentbid} BNB</p>
           </div>
           <div className="d-flex align-items-center">
             <img
@@ -79,9 +79,9 @@ function BidCard(props) {
               width="16"
               height="12"
               alt="Eye"
-              style={{ marginRight: "5px" }}
+              style={{ marginRight: "3px" }}
             />
-            <p className="bid-font m-0">View NFT</p>
+            <p className="s-bid-font m-0">View NFT</p>
           </div>
         </div>
       </div>
