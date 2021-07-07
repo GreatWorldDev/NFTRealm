@@ -22,7 +22,9 @@
 .mr-71 {
   margin-right: 71px;
 }
-
+.cursor-pointer {
+  cursor: pointer;
+}
 @media (max-width: 400px) {
   .mr-71 {
     margin-right: 0;

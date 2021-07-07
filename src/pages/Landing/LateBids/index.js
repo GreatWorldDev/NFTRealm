@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
-import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+// import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import BidCard from "../../../components/BidCard";
 import { BiChevronDownCircle } from "react-icons/bi";
+import Dropdown from "react-bootstrap/Dropdown";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 const bidData = [
   {
@@ -37,8 +41,56 @@ const bidData = [
     currentbid: 2.3,
     bnb: 2,
   },
+  {
+    image: "assets/images/video-preview-1.png",
+    avatar: "assets/images/avatar-1.jpg",
+    sort: "NEW",
+    name: "John Doe",
+    currentbid: 2.3,
+    bnb: 2,
+  },
 ];
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1434,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 1096,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 797,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
+      },
+    },
+  ],
+};
 function LateBids() {
+  const [isDropdown, setisDropdown] = useState(false);
+  const handleDropdown = () => {
+    setisDropdown(!isDropdown);
+  };
   return (
     <div className="border-bottom pb-5">
       <div className="sec-container">
@@ -46,24 +98,37 @@ function LateBids() {
           LATEST BIDS
         </p>
         <div className="d-flex justify-content-end">
-          <p className="timeframe text-right">
+          <div className="timeframe text-right relative">
             Network
             <br />
-            <Button variant="light" className="white-btn">
+            <Button
+              variant="light"
+              className="white-btn"
+              onClick={handleDropdown}
+            >
               Binance <BiChevronDownCircle style={{ float: "right" }} />
             </Button>
-          </p>
+            <div className={`droplist ${isDropdown === true ? "show" : ""}`}>
+              <ul>
+                <li>Item1</li>
+                <li>item2</li>
+                <li>item3</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div
+        {/* <div
           className="d-flex justify-content-around flex-wrap relative"
           style={{ marginBottom: "134.38px" }}
-        >
+        > */}
+        <Slider {...settings}>
           {bidData.map((Data, index) => (
-            <BidCard data={Data} key={index + "bid"} />
+            <BidCard data={Data} key={`${index}bid`} />
           ))}
-          <BsArrowLeft className="left-arrow" />{" "}
-          <BsArrowRight className="right-arrow" />
-        </div>
+        </Slider>
+        {/* <BsArrowLeft className="left-arrow" />{" "}
+          <BsArrowRight className="right-arrow" /> */}
+        {/* </div> */}
         <div className="d-flex justify-content-around flex-wrap">
           <div>
             <img

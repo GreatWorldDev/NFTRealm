@@ -29,6 +29,9 @@
   color: #dddddd;
   opacity: 1;
 }
+a:hover {
+  text-decoration: none !important;
+}
 @media (max-width: 768px) {
   .card {
     margin-bottom: 20px;

@@ -51,6 +51,22 @@ seemore:focus {
   font: normal normal normal 24px/29px Montserrat;
   color: #dddddd;
 }
+.carousel-item {
+  background-color: #141416 !important;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  display: none !important;
+}
+.carousel-indicators {
+  display: none !important;
+}
+.prev-next {
+  position: absolute;
+  right: 25%;
+  bottom: -15px;
+}
+
 @media (max-width: 768px) {
   .subtitle {
     text-align: center;
@@ -69,5 +85,12 @@ seemore:focus {
   .trending {
     text-align: center;
     font: normal normal bold 31px/41px Montserrat;
+  }
+}
+@media (max-width: 996px) {
+  .prev-next {
+    right: 50%;
+    transform: translate(50%, 0);
+    bottom: -30px;
   }
 }

@@ -43,10 +43,14 @@
   padding: 7px 12px;
   font-size: 25px;
   border-radius: 25px;
-  background-color: grey;
-  color: white;
+  background-color: #23262f;
+  color: #f7f7f8;
   opacity: 0;
   transition: opacity 0.2s, right 0.2s;
+}
+.favor-red {
+  background-color: #23262f;
+  color: red;
 }
 .card-bid:hover .favor {
   right: 30px;

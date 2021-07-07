@@ -4,8 +4,8 @@
 }
 .popover-body {
   width: 240.5px;
-  height: 323.2px;
   border-radius: 10px;
+  padding-bottom: 10px;
   background-color: #23262f;
 }
 .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
@@ -13,9 +13,10 @@
   border-bottom-color: #23262f !important;
 }
 .wallet h3 {
-  font: normal normal bold 24px/29px Montserrat;
-  letter-spacing: 0px;
+  font: normal normal bold 24px/26px Montserrat;
+  letter-spacing: 2px;
   color: #ffffff;
+  margin-top: 16px;
 }
 .wallet p {
   color: white;
@@ -45,6 +46,6 @@ p {
   text-decoration: none !important;
 }
 .wallet-list p {
-  margin-bottom: 0;
+  margin-bottom: 12px;
   margin-top: 10px;
 }

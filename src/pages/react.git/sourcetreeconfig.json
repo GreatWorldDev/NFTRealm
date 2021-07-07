@@ -1,0 +1,32 @@
+{
+  "$id": "5",
+  "AutoRefresh": true,
+  "AutoRefreshRemotes": true,
+  "CommitTextLinks": null,
+  "DraftCommitMsg": "",
+  "IncomingSavedCount": 0,
+  "LastCheckedRemotes": "2021-07-06T15:18:01.498919-04:00",
+  "LastUsedView": 1,
+  "LogBranchFilterIndex": 0,
+  "OutgoingSavedCount": 0,
+  "SidebarExpandedItems": [
+    "Branches"
+  ],
+  "SidebarWidth": 210.0,
+  "SubtreeLinks": [],
+  "RemoteProjectLinks": [
+    {
+      "$id": "6",
+      "BaseUrl": "https://github.com",
+      "Identifier": "react-redux-antd-es6/react",
+      "RemoteName": "origin",
+      "Type": 0,
+      "Username": "elite0226",
+      "CloneUrl": null,
+      "ProjectUrl": null,
+      "AccountId": "elite0226@github.com",
+      "AvatarUrl": null,
+      "DisplayName": "origin: https://github.com"
+    }
+  ]
+}

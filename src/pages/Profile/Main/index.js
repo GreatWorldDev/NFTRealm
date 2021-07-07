@@ -4,7 +4,7 @@ import BidCard from "../../../components/BidCard";
 import ProfileCard from "../../../components/ProfileCard";
 import "./style.css";
 
-const bidData = [
+const bidDatas = [
   {
     image: "assets/images/video-preview-1.png",
     avatar: "assets/images/avatar.jpg",
@@ -50,6 +50,88 @@ const tabs = [
 ];
 function Main() {
   const [tab, setTab] = useState("created");
+  const [bidData, setbidData] = useState(bidDatas);
+  const handleTab = (e) => {
+    setTab(e);
+    switch (e) {
+      case "posts":
+        setbidData([
+          {
+            image: "assets/images/video-preview-1.png",
+            avatar: "assets/images/avatar.jpg",
+            sort: "PRO",
+            name: "Jessica Brandel",
+            currentbid: 2.2,
+            bnb: 5,
+          },
+          {
+            image: "assets/images/video-preview-3.png",
+            avatar: "assets/images/avatar.jpg",
+            sort: "NEW",
+            name: "Jessica Brandel",
+            currentbid: 2.1,
+            bnb: 6,
+          },
+        ]);
+
+        break;
+      // eslint-disable-next-line no-duplicate-case
+      case "created":
+        setbidData([
+          {
+            image: "assets/images/video-preview-1.png",
+            avatar: "assets/images/avatar.jpg",
+            sort: "PRO",
+            name: "Jessica Brandel",
+            currentbid: 2.2,
+            bnb: 5,
+          },
+          {
+            image: "assets/images/video-preview-2.png",
+            avatar: "assets/images/avatar-1.jpg",
+            sort: "PRO",
+            name: "John Doe",
+            currentbid: 2.3,
+            bnb: 4,
+          },
+          {
+            image: "assets/images/video-preview-3.png",
+            avatar: "assets/images/avatar.jpg",
+            sort: "NEW",
+            name: "Jessica Brandel",
+            currentbid: 2.1,
+            bnb: 6,
+          },
+        ]);
+
+        break;
+
+      // eslint-disable-next-line no-duplicate-case
+      case "collectibles":
+        setbidData([
+          {
+            image: "assets/images/video-preview-1.png",
+            avatar: "assets/images/avatar.jpg",
+            sort: "PRO",
+            name: "Jessica Brandel",
+            currentbid: 2.2,
+            bnb: 5,
+          },
+          {
+            image: "assets/images/video-preview-3.png",
+            avatar: "assets/images/avatar.jpg",
+            sort: "NEW",
+            name: "Jessica Brandel",
+            currentbid: 2.1,
+            bnb: 6,
+          },
+        ]);
+
+        break;
+      default:
+        break;
+    }
+  };
   return (
     <Row>
       <Col md={12}>
@@ -64,13 +146,15 @@ function Main() {
       </Col>
       <Col lg={9} md={12}>
         <div className="">
-          <div className="d-flex justify-content-lg-end justify-content-around pt-117 mb-50 tab-btn">
+          <div className="d-flex justify-content-lg-end justify-content-around flex-wrap pt-117 mb-50 tab-btn">
             {tabs &&
               tabs.map((e) => (
                 <span
-                  className={`mr-71 ${e.name === tab ? "active" : ""}`}
+                  className={`mr-71 cursor-pointer ${
+                    e.name === tab ? "active" : ""
+                  }`}
                   key={"tab-" + e.name}
-                  onClick={() => setTab(e.name)}
+                  onClick={() => handleTab(e.name)}
                 >
                   {e.title}
                 </span>

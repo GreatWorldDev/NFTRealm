@@ -4,3 +4,27 @@
   font: normal normal normal 18px/22px Montserrat;
   color: white;
 }
+.droplist {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  height: 0;
+  top: 101px;
+  left: 0;
+  opacity: 0;
+  transition: height 0.5s, opacity 0.8s;
+  z-index: 999;
+}
+.droplist.show {
+  opacity: 1;
+  height: 183px;
+}
+.droplist li {
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.droplist li:hover {
+  background-color: grey;
+}

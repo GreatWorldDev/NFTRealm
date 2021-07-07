@@ -45,9 +45,11 @@ const Wallet = (
             </p>
           </Link>
           <Link to="/" style={{ borderBottom: "1px solid #3772FF" }}>
-            <p>
-              <WiLightning />
-              &nbsp; Dark Theme &nbsp;
+            <div className="d-flex align-items-center">
+              <p>
+                <WiLightning />
+                &nbsp; Dark Theme &nbsp;
+              </p>
               <Switch
                 checked={true}
                 uncheckedIcon={false}
@@ -57,9 +59,13 @@ const Wallet = (
                 handleDiameter={15}
                 onColor="#3772FF"
               />
-            </p>
+            </div>
           </Link>
-          <Link to="/" style={{ borderBottom: "1px solid #3772FF" }}>
+          <Link
+            to="/"
+            style={{ borderBottom: "1px solid #3772FF" }}
+            className="mb-3"
+          >
             <p>
               <RiLogoutBoxLine />
               &nbsp; Disconnect

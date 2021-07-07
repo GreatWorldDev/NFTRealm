@@ -21,4 +21,47 @@
   text-align: left;
   font: normal normal normal 42px/52px Montserrat;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.round-arrow {
+  transition: all 0.3s;
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+.round-arrow.rotate {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+}
+/* .slick-next {
+  display: none !important;
+}
+.slick-prev {
+  display: none !important;
+} */
+.creator-dropdown {
+  position: absolute;
+  width: 100%;
+  background-color: #060606;
+  border-radius: 10px;
+  height: 0;
+  top: 65px;
+  left: 0;
+  opacity: 0;
+  transition: height 0.5s, opacity 0.5s;
+  z-index: 999;
+}
+.creator-dropdown li {
+  padding: 10px 0;
+  color: white;
+  font-size: larger;
+}
+.creator-dropdown li:hover {
+  background-color: grey;
+}
+
+.creator-dropdown.show {
+  opacity: 1;
+  height: 100px;
 }

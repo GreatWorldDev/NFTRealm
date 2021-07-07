@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Accordion } from "react-bootstrap";
 import { BsArrowRight, BsArrowLeft, BsFunnel } from "react-icons/bs";
 import BidCard from "../../../components/BidCard";
 import { BiChevronDownCircle } from "react-icons/bi";
+import { FaTimes } from "react-icons/fa";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./style.css";
 const bidData = [
   {
@@ -37,22 +41,40 @@ const bidData = [
     currentbid: 2.3,
     bnb: 2,
   },
+  {
+    image: "assets/images/video-preview-1.png",
+    avatar: "assets/images/avatar-1.jpg",
+    sort: "NEW",
+    name: "John Doe",
+    currentbid: 2.3,
+    bnb: 2,
+  },
 ];
-
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+};
 function DiscoverNFT() {
+  const [isFilter, setisFilter] = useState(true);
+  const handleFilter = () => {
+    setisFilter(!isFilter);
+  };
   return (
     <div className="sec-container">
       <p className="popular mt-5">DISCOVER NFTs</p>
       <Accordion>
-        <Accordion.Toggle as={Card.Header} eventKey="0">
-          <div className="d-flex justify-content-between">
+        <Accordion.Toggle as={Card.Header} eventKey="0" onClick={handleFilter}>
+          <div className="d-flex justify-content-between flex-wrap">
             <p>
               <button className="button">
                 Recently Added <BiChevronDownCircle />
               </button>
             </p>
             <button className="filter">
-              Filter <BsFunnel />
+              Filter {isFilter === true ? <BsFunnel /> : <FaTimes />}
             </button>
           </div>
         </Accordion.Toggle>
@@ -92,20 +114,24 @@ function DiscoverNFT() {
           </Card.Body>
         </Accordion.Collapse>
       </Accordion>
-      <div className="d-flex justify-content-around flex-wrap relative">
+      {/* <div className="d-flex justify-content-around flex-wrap relative"> */}
+      <Slider {...settings}>
         {bidData.map((Data, index) => (
           <BidCard data={Data} key={index + "nft"} />
         ))}
-        <BsArrowLeft className="left-arrow" />{" "}
-        <BsArrowRight className="right-arrow" />
-      </div>
-      <div className="d-flex justify-content-around flex-wrap relative">
+      </Slider>
+      {/* <BsArrowLeft className="left-arrow" />{" "}
+        <BsArrowRight className="right-arrow" /> */}
+      {/* </div> */}
+      {/* <div className="d-flex justify-content-around flex-wrap relative"> */}
+      <Slider {...settings}>
         {bidData.map((Data, index) => (
           <BidCard data={Data} key={index + "bid"} />
         ))}
-        <BsArrowLeft className="left-arrow" />{" "}
-        <BsArrowRight className="right-arrow" />
-      </div>
+      </Slider>
+      {/* <BsArrowLeft className="left-arrow" />{" "}
+        <BsArrowRight className="right-arrow" /> */}
+      {/* </div> */}
       <button className="explore">Explore NFT Marketplace</button>
     </div>
   );

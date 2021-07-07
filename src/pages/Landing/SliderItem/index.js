@@ -4,21 +4,7 @@ import EthCard from "../../../components/EthCard";
 import { Link } from "react-router-dom";
 import Preview from "../../../components/Preview";
 import "./style.css";
-const itemData = [
-  {
-    image: "assets/images/video-preview-1.png",
-    audio: "assets/audios/audio.mp3",
-  },
-  {
-    image: "assets/images/video-preview-1.png",
-    audio: "assets/audios/audio.mp3",
-  },
-  {
-    image: "assets/images/video-preview-1.png",
-    audio: "assets/audios/audio.mp3",
-  },
-];
-function Slider() {
+function Slider(props) {
   const [isfollowClicked, setFollowClicked] = useState(true);
   useEffect(() => {
     setFollowClicked(true);
@@ -27,10 +13,10 @@ function Slider() {
     setFollowClicked(!isfollowClicked);
   };
   return (
-    <div className="slider">
+    <div>
       <Row>
         <Col xs={12} md={12} lg={7}>
-          <Preview data={itemData[1]} />
+          <Preview data={props.itemData} />
         </Col>
         <Col xs={12} md={12} lg={5}>
           <Col
@@ -41,7 +27,7 @@ function Slider() {
               style={{ maxWidth: "439px" }}
               className="d-flex align-items-center justify-content-between"
             >
-              <Link to="/Profile">
+              <Link to="/profile">
                 <div className="d-flex align-items-center">
                   <img
                     src="assets/images/avatar.jpg"

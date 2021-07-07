@@ -1,0 +1,65 @@
+.modal-dialog {
+  max-width: 500px !important;
+  border-radius: 16px;
+}
+.close {
+  font-size: 2.5rem;
+}
+.modal-body {
+  background-color: #141416;
+  border-radius: 20px;
+  padding: 30px !important;
+}
+.modal-content {
+  border-radius: 40px !important;
+}
+.close {
+  color: white !important;
+}
+.cross-sign {
+  border-radius: 20px;
+  padding: 5px 12px;
+  border: 1px solid #141416;
+}
+.cross-sign:hover {
+  border: 1px solid white;
+}
+.placebid {
+  width: 90%;
+  height: 50px;
+  background-color: #3772ff;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}
+.placebid:hover {
+  background-color: #044eff;
+}
+.cancel {
+  width: 90%;
+  height: 50px;
+  background-color: #141416;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid grey;
+  outline: none;
+  font-weight: bold;
+}
+.cancel:hover {
+  background-color: #044eff;
+}
+.bidinput {
+  background-color: #141416;
+  border: none;
+  outline: none;
+  text-align: end;
+  color: white;
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

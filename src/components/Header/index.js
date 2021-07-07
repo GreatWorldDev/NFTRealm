@@ -7,6 +7,7 @@ import { OverlayTrigger } from "react-bootstrap";
 import { FaRegBell } from "react-icons/fa";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+// import NotificationModal from "../NotficationModal";
 import "./style.css";
 const walletData = {
   avatar: "assets/images/avatar.jpg",
@@ -15,13 +16,16 @@ const walletData = {
 };
 function Header() {
   const [isClicked, setisClicked] = useState(false);
+  // const [isNotiModal, setisNotiModal] = useState(false);
   useEffect(() => {
     setisClicked(false);
   }, []);
   const handleClick = () => {
     setisClicked(!isClicked);
   };
-
+  // const handleNotification = () => {
+  //   setisNotiModal(true);
+  // };
   return (
     <header>
       <Navbar
@@ -50,7 +54,7 @@ function Header() {
             </Link>
             {!(
               window.location.href.includes("Profile") ||
-              window.location.href.includes("soldier")
+              window.location.href.includes("item")
             ) && (
               <div>
                 <OverlayTrigger
@@ -66,10 +70,12 @@ function Header() {
                 </OverlayTrigger>
               </div>
             )}
-            {window.location.href.includes("soldier") && (
+            {window.location.href.includes("item") && (
               <>
                 <div className="nav-link px-3 headerlist font-24">
+                  {/* <div onClick={handleNotification} className="pointer"> */}
                   <FaRegBell />
+                  {/* </div> */}
                 </div>
                 <div className="d-flex justify-content-center px-3">
                   <button className="upload-btn">Upload</button>

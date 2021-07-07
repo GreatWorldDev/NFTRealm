@@ -1,0 +1,12 @@
+.noti-modal {
+  top: calc(100% + 44px);
+  width: 396px;
+  margin-left: -198px;
+  padding: 40px 32px 32px;
+  border-radius: 24px;
+  background-color: #141416;
+  display: none;
+}
+.show {
+  display: block;
+}

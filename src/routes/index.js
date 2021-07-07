@@ -8,8 +8,8 @@ function Routes() {
     <BrowserRouter className="bg-dark">
       <Switch>
         <Route exact path="/" component={Landing} />
-        <Route path="/Profile" component={Profile} />
-        <Route path="/Soldier" component={Soldier} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/item" component={Soldier} />
       </Switch>
     </BrowserRouter>
   );

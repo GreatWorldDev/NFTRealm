@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { Card, Col } from "react-bootstrap";
-import { BsHeart, BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import { BsHeart } from "react-icons/bs";
 import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import WarningModal from "../WarningModal";
 import "./style.css";
-function EthCard() {
+function EthCard(props) {
+  const [modalShow, setModalShow] = useState(false);
   return (
     <>
       <div className="d-flex justify-content-center mt-4">
@@ -97,16 +100,19 @@ function EthCard() {
           </div>
         </Col>
         <Col>
-          <Button className="buybtn mt-2 mb-4">Buy Now</Button>
+          <Link to="/item">
+            <Button className="buybtn mt-2">Buy Now</Button>
+          </Link>
         </Col>
         <Col>
-          <Button className="bidbtn mt-2 mb-4" variant="outline-light">
+          <Button
+            className="bidbtn mt-2 mb-4"
+            variant="outline-light"
+            onClick={() => setModalShow(true)}
+          >
             Place a Bid
           </Button>
-        </Col>
-        <Col>
-          <BsArrowLeft className="arrow text-white" />{" "}
-          <BsArrowRight className="arrow text-white" />
+          <WarningModal show={modalShow} onHide={() => setModalShow(false)} />
         </Col>
       </div>
     </>
