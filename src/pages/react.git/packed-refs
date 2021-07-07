@@ -1,6 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-b624f05b0b2ea9c161e97fbacde81d13d8789b58 refs/heads/dependabot/npm_and_yarn/axios-0.21.1
-2720aca4f608858a78187ad0a3da1ac5e327a390 refs/heads/dependabot/npm_and_yarn/http-proxy-1.18.1
-297b5cf1af580b85e3196a2a7c299333ea120473 refs/heads/dependabot/npm_and_yarn/socket.io-2.4.0
-6457c8b0af2361d79e8cb136ba2af4e1856093bf refs/heads/master
-fb9153dff8663dfc8250e2773777da6fefbddd95 refs/heads/mocktest
