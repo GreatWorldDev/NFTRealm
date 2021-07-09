@@ -19,15 +19,11 @@ function BidModal(props) {
           </div>
           <h6 className="mb-4">You are about to purchase C O I N Z from UI8</h6>
           <h3 className="mb-5">Your bid</h3>
-          <ul>
+          <ul className="enter">
             <li className="d-flex justify-content-between px-3">
               <div>Enter bid</div>
               <div>
-                <input
-                  type="number"
-                  className="bidinput"
-                  style={{ border: "1px solid grey", marginRight: "5px" }}
-                />
+                <input type="number" className="bidinput" />
                 <span>ETH</span>
               </div>
             </li>

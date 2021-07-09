@@ -30,11 +30,8 @@ function BidCard(props) {
       </div>
       <Link to="/item">
         <div className="d-flex justify-content-center">
-          <div
-            className="d-flex align-items-center justify-content-between px-2 border-bottom pb-2 mx-1"
-            style={{ maxWidth: "350px" }}
-          >
-            <div className="d-flex align-items-center">
+          <div className="d-flex align-items-center justify-content-between px-2 border-bottom pb-2 mx-1">
+            <div className="d-flex align-items-center mr-4">
               <img
                 src={avatar}
                 alt="Avatar"
@@ -59,11 +56,8 @@ function BidCard(props) {
         </div>
       </Link>
       <div className="d-flex justify-content-center">
-        <div
-          className="d-flex justify-content-around my-2 px-1"
-          style={{ maxWidth: "350px" }}
-        >
-          <div className="d-flex  align-items-center">
+        <div className="d-flex justify-content-between my-2 px-1">
+          <div className="d-flex  align-items-center mr-2">
             <img
               src="assets/images/chart.png"
               alt=""

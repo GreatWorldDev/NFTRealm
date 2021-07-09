@@ -16,7 +16,7 @@ function Footer() {
   return (
     <footer className="border-top">
       <Row>
-        <Col lg={3} md={12}>
+        <Col lg={5} md={12}>
           <div className="text-center text-lg-left">
             <Link to="/">
               <img
@@ -43,7 +43,7 @@ function Footer() {
             </div>
           </div>
         </Col>
-        <Col lg={3} md={12}>
+        <Col lg={2} md={12}>
           <div>
             <Link to="/">
               <p className="text-center text-lg-left">Search</p>
@@ -59,7 +59,7 @@ function Footer() {
             </Link>
           </div>
         </Col>
-        <Col lg={3} md={12}>
+        <Col lg={2} md={12}>
           <div>
             <Link to="/">
               <p className="text-center text-lg-left">FAQ</p>

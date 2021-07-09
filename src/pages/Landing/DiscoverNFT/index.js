@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Card, Accordion } from "react-bootstrap";
-import { BsArrowRight, BsArrowLeft, BsFunnel } from "react-icons/bs";
+import { BsFunnel } from "react-icons/bs";
 import BidCard from "../../../components/BidCard";
 import { BiChevronDownCircle } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
@@ -96,7 +96,7 @@ function DiscoverNFT() {
       <p className="popular mt-5">DISCOVER NFTs</p>
       <Accordion>
         <Accordion.Toggle as={Card.Header} eventKey="0" onClick={handleFilter}>
-          <div className="d-flex justify-content-between flex-wrap">
+          <div className="d-flex justify-content-lg-between justify-content-around flex-wrap mb-5">
             <p>
               <button className="button">
                 Recently Added <BiChevronDownCircle />
@@ -143,24 +143,16 @@ function DiscoverNFT() {
           </Card.Body>
         </Accordion.Collapse>
       </Accordion>
-      {/* <div className="d-flex justify-content-around flex-wrap relative"> */}
-      <Slider {...settings}>
+      <Slider {...settings} className="mb-5">
         {bidData.map((Data, index) => (
           <BidCard data={Data} key={index + "nft"} />
         ))}
       </Slider>
-      {/* <BsArrowLeft className="left-arrow" />{" "}
-        <BsArrowRight className="right-arrow" /> */}
-      {/* </div> */}
-      {/* <div className="d-flex justify-content-around flex-wrap relative"> */}
       <Slider {...settings}>
         {bidData.map((Data, index) => (
           <BidCard data={Data} key={index + "bid"} />
         ))}
       </Slider>
-      {/* <BsArrowLeft className="left-arrow" />{" "}
-        <BsArrowRight className="right-arrow" /> */}
-      {/* </div> */}
       <button className="explore">Explore NFT Marketplace</button>
     </div>
   );

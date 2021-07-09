@@ -78,7 +78,9 @@ function Header() {
                   {/* </div> */}
                 </div>
                 <div className="d-flex justify-content-center px-3">
-                  <button className="upload-btn">Upload</button>
+                  <Link to="/create">
+                    <button className="upload-btn">Upload</button>
+                  </Link>
                 </div>
                 <div className="d-flex justify-content-center">
                   <button className="wallet-btn">

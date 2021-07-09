@@ -69,14 +69,16 @@
   color: #dddddd;
 }
 .buybtn {
-  width: 355px;
+  max-width: 350px;
+  width: 80%;
   height: 60px;
   border-radius: 30px !important;
   font-family: 24px;
   color: white;
 }
 .bidbtn {
-  width: 350px;
+  max-width: 350px;
+  width: 80%;
   height: 60px;
   border: 1px solid white;
   border-radius: 30px !important;
@@ -89,5 +91,13 @@
 @media (max-width: 768px) {
   .price {
     font: normal normal 900 47px/73px Montserrat;
+  }
+  .slick-prev {
+    left: 40% !important;
+    top: -18px !important;
+  }
+  .slick-next {
+    right: 40% !important;
+    top: -18px !important;
   }
 }

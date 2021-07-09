@@ -58,6 +58,7 @@ const Wallet = (
                 height={15}
                 handleDiameter={15}
                 onColor="#3772FF"
+                onChange={() => console.log("Success")}
               />
             </div>
           </Link>

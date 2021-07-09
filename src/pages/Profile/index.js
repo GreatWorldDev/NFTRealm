@@ -5,9 +5,7 @@ import Main from "./Main";
 function Profile() {
   return (
     <>
-      <Header />
       <Main />
-      <Footer />
     </>
   );
 }

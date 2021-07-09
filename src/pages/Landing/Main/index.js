@@ -9,7 +9,6 @@ import SliderItem from "../SliderItem";
 import Popular from "../Popular";
 import LateBids from "../LateBids";
 import DiscoverNFT from "../DiscoverNFT";
-import Footer from "../../../components/Footer";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import "./style.css";
 const itemData = [
@@ -100,7 +99,6 @@ function Main() {
       <Popular />
       <LateBids />
       <DiscoverNFT />
-      <Footer />
     </>
   );
 }

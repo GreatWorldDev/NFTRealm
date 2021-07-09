@@ -5,9 +5,7 @@ import Main from "./Main";
 function Search() {
   return (
     <div>
-      <Header />
       <Main />
-      <Footer />
     </div>
   );
 }

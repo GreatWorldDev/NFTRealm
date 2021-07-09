@@ -7,7 +7,7 @@ import "./style.css";
 function UserCard(props) {
   const { avatar, name, followNum, index } = props;
   return (
-    <div>
+    <div className="d-flex justify-content-center">
       <Card className="creator-card">
         <div className="d-flex justify-content-between align-items-center border-bottom mb-2">
           <button

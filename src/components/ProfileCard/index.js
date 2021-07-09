@@ -66,7 +66,7 @@ function ProfileCard(props) {
           </div>
         </li>
         <li className="font-43 bold l-space-0 mt-36 mb-24">{userName}</li>
-        <li className="font-24 mb-35">
+        <li className="font-24 mb-35 ">
           {tokenURI}
           <span className="pointer">
             &nbsp;

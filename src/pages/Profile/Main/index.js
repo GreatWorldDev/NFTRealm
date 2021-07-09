@@ -133,13 +133,9 @@ function Main() {
     }
   };
   return (
-    <Row>
-      <Col md={12}>
-        <img
-          src="assets/images/background.jpg"
-          alt="background"
-          className="background"
-        />
+    <Row className="m-0 p-0">
+      <Col md={12} className="background">
+        <img src="assets/images/background.jpg" alt="background" />
       </Col>
       <Col lg={3} md={12} className="d-flex justify-content-center">
         <ProfileCard profileData={profileData} />

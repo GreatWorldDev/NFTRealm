@@ -94,7 +94,7 @@ function LateBids() {
   return (
     <div className="border-bottom pb-5">
       <div className="sec-container">
-        <p className="popular" style={{ marginTop: "71px" }}>
+        <p className="popular mb-5" style={{ marginTop: "71px" }}>
           LATEST BIDS
         </p>
         <div className="d-flex justify-content-end">
@@ -121,7 +121,7 @@ function LateBids() {
           className="d-flex justify-content-around flex-wrap relative"
           style={{ marginBottom: "134.38px" }}
         > */}
-        <Slider {...settings}>
+        <Slider {...settings} style={{ marginBottom: "134.38px" }}>
           {bidData.map((Data, index) => (
             <BidCard data={Data} key={`${index}bid`} />
           ))}

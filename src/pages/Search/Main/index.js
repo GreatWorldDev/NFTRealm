@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsSearch } from "react-icons/bs";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Form } from "react-bootstrap";
+import { FaTimesCircle } from "react-icons/fa";
 import SearchCard from "../../../components/SearchCard";
 import "./style.css";
 const bidData = [
@@ -44,6 +45,22 @@ const bidData = [
     currentbid: 2.3,
     bnb: 2,
   },
+  {
+    image: "assets/images/video-preview-1.png",
+    avatar: "assets/images/avatar-1.jpg",
+    sort: "NEW",
+    name: "John Doe",
+    currentbid: 2.3,
+    bnb: 2,
+  },
+  {
+    image: "assets/images/video-preview-1.png",
+    avatar: "assets/images/avatar-1.jpg",
+    sort: "NEW",
+    name: "John Doe",
+    currentbid: 2.3,
+    bnb: 2,
+  },
 ];
 const tabs = [
   { title: "Info" },
@@ -54,6 +71,15 @@ const tabs = [
 ];
 function Main() {
   const [tab, setTab] = useState(1);
+  const [isSelected, setIsSelected] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectItem, setSelectItem] = useState("Verified Only");
+  const handleSelect = (e) => {
+    setIsSelected(true);
+  };
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
   return (
     <div className="search-content">
       <div className="d-flex justify-content-between align-items-center search-bar">
@@ -66,29 +92,14 @@ function Main() {
         </div>
       </div>
       <Row>
-        <Col lg={3} md={12}>
-          <select className="select" style={{ display: "none" }}>
-            <option>Verified only</option>
-            <option>All</option>
-            <option>Most liked</option>
-          </select>
-          <div className="nice-select select open" tabindex="1">
-            <span className="current">Verified only</span>
-            <ul className="list">
-              <li data-value="Verified only" className="option selected focus">
-                Verified only
-              </li>
-              <li data-value="All" className="option">
-                All
-              </li>
-              <li data-value="Most liked" className="option">
-                Most liked
-              </li>
-            </ul>
-          </div>
+        <Col lg={3} md={12} className="px-3">
+          <Form.Control as="select" style={{ marginTop: "45px" }}>
+            <option>Oldest</option>
+            <option>Newest</option>
+          </Form.Control>
         </Col>
         <Col lg={9} md={12}>
-          <div className="d-flex justify-content-around my-5">
+          <div className="d-flex justify-content-around flex-wrap my-5">
             {tabs &&
               tabs.map((e, index) => (
                 <div
@@ -102,6 +113,68 @@ function Main() {
                 </div>
               ))}
           </div>
+        </Col>
+        <Col lg={3} md={12} className="px-3">
+          <Form.Group>
+            <p className="range__label ">PRICE RANGE</p>
+            <Form.Control type="range" />
+            <div className="d-flex justify-content-between mt-3">
+              <div className="range__label">0.01 ETH</div>
+              <div className="range__label">10 ETH</div>
+            </div>
+          </Form.Group>
+          <p className="range__label">PRICE</p>
+          <Form.Control as="select" className="mb-4">
+            <option>Most liked</option>
+            <option>Least liked</option>
+          </Form.Control>
+          <p className="range__label">COLOR</p>
+          <Form.Control as="select" className="mb-4">
+            <option>All colors</option>
+            <option>Black</option>
+            <option>Green</option>
+            <option>Pink</option>
+            <option>Purple</option>
+          </Form.Control>
+          <p className="range__label">CREATOR</p>
+          <Form.Control as="select" className="mb-4">
+            <option>Verified only</option>
+            <option>All</option>
+            <option>Most liked</option>
+          </Form.Control>
+          <a href="/">
+            <p className="reset m-0">
+              <FaTimesCircle className="mr-2" />
+              Reset filter
+            </p>
+          </a>
+          {/* <div
+            className={`nice-select ${isSelected ? "select" : ""}  ${
+              isOpen ? "open" : ""
+            }`}
+            tabindex="1"
+          >
+            <span className="current" onClick={handleOpen}>
+              Verified only
+            </span>
+            <ul className="list">
+              <li
+                data-value="Verified only"
+                className="option selected focus"
+                onClick={handleSelect}
+              >
+                Verified only
+              </li>
+              <li data-value="All" className="option">
+                All
+              </li>
+              <li data-value="Most liked" className="option">
+                Most liked
+              </li>
+            </ul>
+          </div> */}
+        </Col>
+        <Col lg={9} md={12}>
           <Row>
             {bidData.map((Data, index) => (
               <Col

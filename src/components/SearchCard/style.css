@@ -69,12 +69,12 @@
   color: white;
   font-size: 9px;
 }
-.name {
+.s-name {
   font: normal normal normal 10px/15px Montserrat;
   letter-spacing: 0px;
   color: #dddddd;
 }
-.kind {
+.s-kind {
   color: #767d8f;
   font: normal normal normal 9px/12px Montserrat;
 }

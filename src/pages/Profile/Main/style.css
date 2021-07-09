@@ -1,7 +1,11 @@
-.background {
+.background img {
   width: 100%;
   height: 650px;
   object-fit: cover;
+  margin: 0;
+}
+.background {
+  margin: 0;
 }
 .tab-btn span {
   width: 150px;

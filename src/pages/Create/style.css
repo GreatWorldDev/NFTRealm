@@ -1,0 +1,138 @@
+.upload__note {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777e90;
+}
+.dropzone {
+  background-color: #23262f;
+  border-radius: 8px;
+  padding: 20px 0;
+}
+.dropzone p {
+  text-align: center;
+  color: #777e90;
+}
+.field__label {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b1b5c3;
+}
+.field__input,
+.field__textarea {
+  border-color: #353945 !important;
+  color: #fcfcfd;
+}
+.form-control {
+  border-color: #353945 !important;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(1.75rem) !important;
+}
+.custom-switch .custom-control-label::before {
+  left: -2.25rem;
+  width: 2.75rem !important;
+}
+.loader {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  font-size: 4px;
+  -webkit-animation: loader 1.1s infinite ease;
+  animation: loader 1.1s infinite ease;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  animation-name: loader-white;
+}
+.v-show {
+  display: none !important;
+}
+@media (max-width: 992px) {
+  .unshow {
+    display: none;
+  }
+  .v-show {
+    display: inline-block !important;
+  }
+}
+@keyframes loader-white {
+  0%,
+  100% {
+    box-shadow: 0em -2.6em 0em 0em #ffffff,
+      1.8em -1.8em 0 0em rgb(255 255 255 / 20%),
+      2.5em 0em 0 0em rgb(255 255 255 / 20%),
+      1.75em 1.75em 0 0em rgb(255 255 255 / 20%),
+      0em 2.5em 0 0em rgb(255 255 255 / 20%),
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 20%),
+      -2.6em 0em 0 0em rgb(255 255 255 / 50%),
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 70%);
+  }
+  12.5% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 70%),
+      1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgb(255 255 255 / 20%),
+      1.75em 1.75em 0 0em rgb(255 255 255 / 20%),
+      0em 2.5em 0 0em rgb(255 255 255 / 20%),
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 20%),
+      -2.6em 0em 0 0em rgb(255 255 255 / 20%),
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 50%);
+  }
+  25% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 50%),
+      1.8em -1.8em 0 0em rgb(255 255 255 / 70%), 2.5em 0em 0 0em #ffffff,
+      1.75em 1.75em 0 0em rgb(255 255 255 / 20%),
+      0em 2.5em 0 0em rgb(255 255 255 / 20%),
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 20%),
+      -2.6em 0em 0 0em rgb(255 255 255 / 20%),
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 20%);
+  }
+  37.5% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 20%),
+      1.8em -1.8em 0 0em rgb(255 255 255 / 50%),
+      2.5em 0em 0 0em rgb(255 255 255 / 70%), 1.75em 1.75em 0 0em #ffffff,
+      0em 2.5em 0 0em rgb(255 255 255 / 20%),
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 20%),
+      -2.6em 0em 0 0em rgb(255 255 255 / 20%),
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 20%);
+  }
+  50% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 20%),
+      1.8em -1.8em 0 0em rgb(255 255 255 / 20%),
+      2.5em 0em 0 0em rgb(255 255 255 / 50%),
+      1.75em 1.75em 0 0em rgb(255 255 255 / 70%), 0em 2.5em 0 0em #ffffff,
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 20%),
+      -2.6em 0em 0 0em rgb(255 255 255 / 20%),
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 20%);
+  }
+  62.5% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 20%),
+      1.8em -1.8em 0 0em rgb(255 255 255 / 20%),
+      2.5em 0em 0 0em rgb(255 255 255 / 20%),
+      1.75em 1.75em 0 0em rgb(255 255 255 / 50%),
+      0em 2.5em 0 0em rgb(255 255 255 / 70%), -1.8em 1.8em 0 0em #ffffff,
+      -2.6em 0em 0 0em rgb(255 255 255 / 20%),
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 20%);
+  }
+  75% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 20%),
+      1.8em -1.8em 0 0em rgb(255 255 255 / 20%),
+      2.5em 0em 0 0em rgb(255 255 255 / 20%),
+      1.75em 1.75em 0 0em rgb(255 255 255 / 20%),
+      0em 2.5em 0 0em rgb(255 255 255 / 50%),
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 70%), -2.6em 0em 0 0em #ffffff,
+      -1.8em -1.8em 0 0em rgb(255 255 255 / 20%);
+  }
+  87.5% {
+    box-shadow: 0em -2.6em 0em 0em rgb(255 255 255 / 20%),
+      1.8em -1.8em 0 0em rgb(255 255 255 / 20%),
+      2.5em 0em 0 0em rgb(255 255 255 / 20%),
+      1.75em 1.75em 0 0em rgb(255 255 255 / 20%),
+      0em 2.5em 0 0em rgb(255 255 255 / 20%),
+      -1.8em 1.8em 0 0em rgb(255 255 255 / 50%),
+      -2.6em 0em 0 0em rgb(255 255 255 / 70%), -1.8em -1.8em 0 0em #ffffff;
+  }
+}
