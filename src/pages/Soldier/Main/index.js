@@ -70,7 +70,7 @@ function Main() {
                 have regardless all the struggles might come accross
               </p>
             </li>
-            <li className="d-flex justify-content-around flex-wrap tab-round mb-38">
+            <li className="d-flex justify-content-around flex-wrap tab-round mb-38 cursor-pointer bloody-tab">
               {tabs &&
                 tabs.map((e, index) => (
                   <div

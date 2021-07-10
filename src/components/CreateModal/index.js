@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
-import { BiWalletAlt } from "react-icons/bi";
 import { FaFileUpload } from "react-icons/fa";
 import { Button } from "react-bootstrap";
-import { BsArrowRight, BsArrowLeft, BsCheck } from "react-icons/bs";
+import { BsCheck } from "react-icons/bs";
 import { FaShoppingBag, FaPen } from "react-icons/fa";
 import "./style.css";
 function WarningModal(props) {

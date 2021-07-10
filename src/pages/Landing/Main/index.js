@@ -30,10 +30,8 @@ function Main() {
 
   const onNextClick = () => {
     if (index >= itemData.length - 1) {
-      console.log(index);
       setIndex(0);
     } else {
-      console.log(index);
       setIndex(index + 1);
     }
   };

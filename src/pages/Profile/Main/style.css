@@ -34,3 +34,10 @@
     margin-right: 0;
   }
 }
+@media (max-width: 700px) {
+  .tab-btn {
+    border: 1px solid white;
+    border-radius: 12px;
+    padding-top: 10px;
+  }
+}

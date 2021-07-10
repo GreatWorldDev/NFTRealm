@@ -25,7 +25,6 @@ function ConnectWallet() {
     setTerm(true);
     setIsHide(true);
     setIsScan(true);
-    console.log(isHide, isScan, isTerm);
   };
   return (
     <div className="search-content">

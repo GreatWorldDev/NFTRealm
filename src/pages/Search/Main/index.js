@@ -71,15 +71,6 @@ const tabs = [
 ];
 function Main() {
   const [tab, setTab] = useState(1);
-  const [isSelected, setIsSelected] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectItem, setSelectItem] = useState("Verified Only");
-  const handleSelect = (e) => {
-    setIsSelected(true);
-  };
-  const handleOpen = () => {
-    setIsOpen(true);
-  };
   return (
     <div className="search-content">
       <div className="d-flex justify-content-between align-items-center search-bar">
@@ -148,31 +139,6 @@ function Main() {
               Reset filter
             </p>
           </a>
-          {/* <div
-            className={`nice-select ${isSelected ? "select" : ""}  ${
-              isOpen ? "open" : ""
-            }`}
-            tabindex="1"
-          >
-            <span className="current" onClick={handleOpen}>
-              Verified only
-            </span>
-            <ul className="list">
-              <li
-                data-value="Verified only"
-                className="option selected focus"
-                onClick={handleSelect}
-              >
-                Verified only
-              </li>
-              <li data-value="All" className="option">
-                All
-              </li>
-              <li data-value="Most liked" className="option">
-                Most liked
-              </li>
-            </ul>
-          </div> */}
         </Col>
         <Col lg={9} md={12}>
           <Row>

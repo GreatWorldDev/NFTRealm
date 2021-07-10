@@ -1,5 +1,5 @@
 header {
-  padding: 65px 40px;
+  padding: 15px 40px;
 }
 .wallet-btn {
   width: 200px;
@@ -15,7 +15,6 @@ header {
   width: 130px;
   height: 60px;
   border: none;
-  margin-bottom: 15px;
   background-color: #007bff;
   color: white;
   border-radius: 40px;
@@ -114,5 +113,11 @@ header {
   }
   .nav {
     display: none;
+  }
+}
+@media (max-width: 992px) {
+  .upload-btn {
+    margin-bottom: 15px;
+    margin-top: 15px;
   }
 }

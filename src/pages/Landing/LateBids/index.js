@@ -3,7 +3,6 @@ import { Button } from "react-bootstrap";
 // import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 import BidCard from "../../../components/BidCard";
 import { BiChevronDownCircle } from "react-icons/bi";
-import Dropdown from "react-bootstrap/Dropdown";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -121,11 +120,13 @@ function LateBids() {
           className="d-flex justify-content-around flex-wrap relative"
           style={{ marginBottom: "134.38px" }}
         > */}
-        <Slider {...settings} style={{ marginBottom: "134.38px" }}>
-          {bidData.map((Data, index) => (
-            <BidCard data={Data} key={`${index}bid`} />
-          ))}
-        </Slider>
+        <div className="px-5">
+          <Slider {...settings} style={{ marginBottom: "134.38px" }}>
+            {bidData.map((Data, index) => (
+              <BidCard data={Data} key={`${index}bid`} />
+            ))}
+          </Slider>
+        </div>
         {/* <BsArrowLeft className="left-arrow" />{" "}
           <BsArrowRight className="right-arrow" /> */}
         {/* </div> */}

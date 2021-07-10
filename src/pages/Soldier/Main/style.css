@@ -14,3 +14,8 @@
   background-color: white;
   color: black !important;
 }
+@media (max-width: 1648px) {
+  .bloody-tab {
+    flex-direction: column;
+  }
+}

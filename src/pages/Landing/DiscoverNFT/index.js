@@ -143,16 +143,18 @@ function DiscoverNFT() {
           </Card.Body>
         </Accordion.Collapse>
       </Accordion>
-      <Slider {...settings} className="mb-5">
-        {bidData.map((Data, index) => (
-          <BidCard data={Data} key={index + "nft"} />
-        ))}
-      </Slider>
-      <Slider {...settings}>
-        {bidData.map((Data, index) => (
-          <BidCard data={Data} key={index + "bid"} />
-        ))}
-      </Slider>
+      <div className="px-4">
+        <Slider {...settings} className="mb-5">
+          {bidData.map((Data, index) => (
+            <BidCard data={Data} key={index + "nft"} />
+          ))}
+        </Slider>
+        <Slider {...settings}>
+          {bidData.map((Data, index) => (
+            <BidCard data={Data} key={index + "bid"} />
+          ))}
+        </Slider>
+      </div>
       <button className="explore">Explore NFT Marketplace</button>
     </div>
   );

@@ -1,7 +1,6 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { BiChevronDownCircle } from "react-icons/bi";
-import { Button, Dropdown, FormControl } from "react-bootstrap";
-// import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
+import { Button } from "react-bootstrap";
 import UserCard from "../../../components/UserCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -91,10 +90,6 @@ function Popular() {
   const handleDropdown = () => {
     setisDropdown(!isDropdown);
   };
-  const unShow = () => {
-    console.log("##########");
-    setisDropdown(false);
-  };
 
   return (
     <div className="popular-body">
@@ -143,7 +138,7 @@ function Popular() {
             </div>
           </>
         </div>
-        <div>
+        <div className="px-5">
           <Slider {...settings}>
             {userData.map((user, index) => (
               <UserCard

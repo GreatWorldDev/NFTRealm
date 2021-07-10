@@ -5,6 +5,7 @@ import SearchCard from "../../components/SearchCard";
 import { BsArrowRight } from "react-icons/bs";
 import CreateModal from "../../components/CreateModal";
 import PreviewModal from "../../components/PreviewModal";
+import { BsUpload } from "react-icons/bs";
 import "./style.css";
 
 const Data = {
@@ -16,7 +17,6 @@ const Data = {
   bnb: 5,
 };
 function Search() {
-  const [fileName, setFileName] = useState("Upload Boundary File");
   const [isShow, setModalShow] = useState(false);
   const [isPreview, setPreview] = useState(false);
   const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
@@ -39,7 +39,17 @@ function Search() {
           <section className="container mb-4">
             <div {...getRootProps({ className: "dropzone" })}>
               <input {...getInputProps()} />
+              <p style={{ fontSize: "30px" }}>
+                <BsUpload></BsUpload>
+              </p>
               <p>Drag 'n' drop some files here, or click to select files</p>
+            </div>
+            <div className="d-flex justify-content-center flex-column">
+              {files.map((file, index) => (
+                <div className="text-white" key={`file-${index}`}>
+                  {file}
+                </div>
+              ))}
             </div>
           </section>
           <p className="text-white bold">Item Details</p>

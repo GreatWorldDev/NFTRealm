@@ -37,13 +37,13 @@ function Header() {
         <Navbar.Brand>
           <Link
             to="/"
-            className="d-flex align-items-center mb-4 mb-lg-0 text-dark text-decoration-none"
+            className="d-flex align-items-center mb-lg-0 text-dark text-decoration-none"
           >
             <img src="assets/images/Group153.png" alt="logo"></img>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Collapse id="responsive-navbar-nav d-flex align-items-center">
           <Nav className="ml-auto">
             <Search />
             <Link to="/" className="nav-link px-3 headerlist">
@@ -52,36 +52,31 @@ function Header() {
             <Link to="/" className="nav-link px-3 headerlist">
               Find People
             </Link>
-            {!(
-              window.location.href.includes("Profile") ||
-              window.location.href.includes("item")
-            ) && (
-              <div>
-                <OverlayTrigger
-                  trigger="click"
-                  placement="bottom"
-                  overlay={Wallet}
-                >
-                  <WalletButton
-                    walletData={walletData}
-                    isClicked={isClicked}
-                    onClick={handleClick}
-                  />
-                </OverlayTrigger>
-              </div>
-            )}
+            <div className="nav-link px-3 headerlist font-24">
+              {/* <div onClick={handleNotification} className="pointer"> */}
+              <FaRegBell />
+              {/* </div> */}
+            </div>
+            <div className="d-flex justify-content-center px-3">
+              <Link to="/create">
+                <button className="upload-btn">Upload</button>
+              </Link>
+            </div>
+            <div>
+              <OverlayTrigger
+                trigger="click"
+                placement="bottom"
+                overlay={Wallet}
+              >
+                <WalletButton
+                  walletData={walletData}
+                  isClicked={isClicked}
+                  onClick={handleClick}
+                />
+              </OverlayTrigger>
+            </div>
             {window.location.href.includes("item") && (
               <>
-                <div className="nav-link px-3 headerlist font-24">
-                  {/* <div onClick={handleNotification} className="pointer"> */}
-                  <FaRegBell />
-                  {/* </div> */}
-                </div>
-                <div className="d-flex justify-content-center px-3">
-                  <Link to="/create">
-                    <button className="upload-btn">Upload</button>
-                  </Link>
-                </div>
                 <div className="d-flex justify-content-center">
                   <button className="wallet-btn">
                     <div className="d-flex text-white bold">

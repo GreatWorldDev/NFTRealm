@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { BiWalletAlt } from "react-icons/bi";
-import { BsArrowRight, BsArrowLeft, BsCheck } from "react-icons/bs";
+import { BsArrowRight, BsCheck } from "react-icons/bs";
 import "./style.css";
 function WalletConnectBtn(props) {
   const { color, walletName } = props.wallet;
